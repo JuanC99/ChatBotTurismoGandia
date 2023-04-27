@@ -1,0 +1,189 @@
+version: "3.1"
+
+responses:
+  utter_bienvenida:
+  - text: ¡Hola soy TurisBot! encantado de conocerte! \n Puedo ayudarte con cualquier pregunta relacionada con el turismo de Gandia. \n Dime, ¿en qué puedo ayudarte?
+  - text: ¡Hola! Soy TurisBot, encantado de hablar contigo \n Puedes realizarme cualquier pregunta relacionada con el turimos de Gandia. \n ¿En qué puedo ayudarte?
+  - text: '¡Hola, mi nombre es TurisBot! Puedes escribirme directamente tus dudas, y si no se te ocurre qué preguntar sobre el turismo de Gania, puedo ayudarte con alguno de estos temas:'
+  
+  utter_saludar:
+  - text: ¡Hola!
+  - text: ¡Buenas! 😊
+
+  utter_negar:
+  - text: No, para nada.
+  - text: No, claro que no.
+  - text: Por supuesto que no.
+  - text: No lo creo.
+
+  utter_noHayDeQue:
+  - text: De nada 😊
+  - text: ¡No hay de qué!
+  - text: Gracias a ti por preguntarme y ayudarme a mejorar
+  - text: ¡Encantado de ayudarte!
+  - text: ¡Encantado de poder ayudarte!
+  - text: ¡Encantado de haberte ayudado!
+  - text: Es un auténtico placer poder ayudarte.
+
+  utter_afirmar:
+  - text: Vale, perfecto.
+  - text: Sí, claro.
+  - text: Por supuesto.
+  - text: Adelante.
+
+  utter_conformidad:
+  - text: Vale
+  - text: Perfecto
+  - text: De acuerdo
+  - text: Entendido
+
+  utter_despedirse:
+  - text: ¡Hasta otra! 👋
+  - text: ¡Hasta luego!
+  - text: ¡Hasta pronto!
+  - text: Espero verte pronto 👋
+  - text: ¡Nos vemos!
+  - text: ¡Hasta la próxima! 😊
+  - text: Adiós, ¡espero verte pronto!
+
+  utter_estadoDeAnimo:
+  - text: Genial! ¿Tú que tal?
+  - text: Genial, la verdad. Muchas gracias por preguntar 😊.
+  - text: Hoy me encuentro genial 😊, ¡gracias por preguntar!
+  - text: Hoy me siento especialmente bien. ¿Y tú que tal?
+
+  utter_necesitasAlgoMas:
+  - text: ¿Necesitas algo más?
+  - text: ¿Hay algo más que pueda hacer por tí?
+  - text: ¿Puedo ayudarte en algo más?
+  - text: ¿Tienes alguna otra duda?
+  - text: ¿Tienes más dudas?
+
+  utter_esperar:
+  - text: Aquí te espero
+  - text: Sin problema, ¡avísame cuando estés listo!
+  - text: ¡Tómate todo el tiempo que necesites!
+  - text: Tranquilo, ¡tómate tu tiempo!
+  - text: ¿En qué estas pensando? 🤔
+
+  utter_ofrecerAyuda:
+  - text: ¿Qué puedo hacer por ti?
+  - text: ¿En qué puedo ayudarte? 🕵️‍
+  - text: Dime, ¿qué puedo hacer por ti?
+  - text: ¿En qué te puedo ayudar?
+  - text: Dime, ¿qué necesitas?
+  - text: ¿Qué necesitas?
+  - text: ¿Te puedo ayudar en algo?
+  - text: Dime, ¿en qué te puedo ayudar? 🕵️‍
+  - text: Dime, ¿en qué puedo ayudarte?
+
+  utter_animarPreguntar:
+  - text: Adelante, pregúntame.
+  - text: Dime, ¿qué que quieres saber?
+  - text: ¿Qué quieres saber?
+  - text: ¿Qué necesitas saber?
+  - text: ¿Qué te gustaría saber?
+  - text: Adelante, dime
+  - text: Dime exactamente lo que quieres saber e intentaré ayudarte 😊
+  - text: Estoy aquí para ayudarte, así que pregúntame lo que quieras.
+  - text: Estoy aquí para ayudarte, adelante preguntame lo que quieras.
+  - text: Dime, ¿que dudas tienes? 🤔
+  - text: Adelante, te leo.
+  
+  utter_reaccionPositiva:
+  - text: ¡Perfecto! 👍
+  - text: ¡Genial!
+  - text: ¡Okey!
+  utter_alegrarse:
+  - text: Me alegro mucho 😊
+  - text: ¡Que guay! Me alegro por ti
+  utter_entristecerse:
+  - text: Vaya 😔
+  - text: Lo siento mucho 😔
+
+  utter_enQueTePuedoAyudar:
+  - text: Puedo responderte a cualquier pregunta sobre el turismo en Gandia. Musesos, playa, montaña... ¿Qué te apetece visitar?
+  - text: Puedo aconsejarte sobre qué sitios visitar en Gandia.
+  - text: Puedo ayudarte con cualquier pregunta relacionada con el turismo de Gandia. Recuerda que puedo informarte sobre los musesos que hay, los lugares más emblemáticos, distintas actividades que puedes realizar etc.
+  - text: Puedo resolver tus dudas acerca del turismo en Gandia. ¿No sabes qué hacer en Gandia? ¡Yo te ayudo¡
+
+  utter_recordarAsistencia:
+  - text: Avísame si tienes cualquier otra duda.
+  - text: Pregúntame siempre que lo necesites.
+  - text: Recuerda que puedes preguntarme siempre que lo necesites.
+  - text: Estaré aquí esperándote por si necesitas cualquier otra cosa.
+  - text: Si necesitas cualquier otra cosa no dudes en preguntarme.
+  - text: Avísame si quiere visitar más sistios
+
+  utter_proporcionarMasInformacion:
+  - text: "Existen muchas páginas web donde puedes informarte sobre el turismo en Gandia: <a target='_blank' href='https://www.visitgandia.com/gnd/web_php/index.php'>Visit Gandia</a> o en <a target='_blank' href='https://turismodegandia.com/'>Turismo Gandia</a>."
+
+  utter_confirmarReinicio:
+  - buttons:
+    - payload: /restart
+      title: Sí
+    - payload: No
+      title: No
+    image: https://media3.giphy.com/media/l2JdTTKnnuY1IA1qM/giphy.gif?cid=ecf05e47l7vd5icqmdu8xzlddaqdrhl2gxki2tul7hehtaiu&rid=giphy.gif&ct=g
+    text: ¿Seguro que quieres reiniciar la conversación?
+  
+  utter_saberMas:
+  - text: ¿Te gustaría saber alguna cosa más?
+  - text: ¿Te gustaría preguntarme alguna cosa más?
+  - text: ¿Qué más te gustaría preguntarme?
+  - text: ¿Qué más te gustaría saber?
+
+  utter_pedirRepetirPregunta:
+  - text: ¿Podrías repetírmelo de otra manera?
+  - text: ¿Podrías expresarlo de otra manera?
+  - text: ¿Quizá puedas preguntármelo de otra manera? 😅
+  - text: ¿Me lo puedes preguntar de otra manera?
+  - text: ¿Serías tan amable de preguntármelo de otra manera?
+  - text: ¿Me lo podrías decir de otra forma?
+  - text: ¿Me puedes repetir la pregunta con otras palabras? 🤓
+  - text: Por favor, ¿me lo puedes decir con otras palabras? 🤨
+
+
+  utter_disculparse:
+  - text: |-
+      Siento mucho no haber podido hacerlo mejor 😔. 
+
+       Soy muy joven y aun me queda mucho por aprender.
+  - text: |-
+      Siento no haber podido atenderte como necesitabas. 
+
+       Trato de mejorar día a día 💪.
+  - text: |-
+      Siento no haber podido resolver tu duda. 
+
+       Intentaré mejorar para poder ayudarte la próxima vez.
+  utter_disculpasPorNoEnteder:
+  - text: Lo siento por no haberte entendido. ¿Podrías repetírmelo de otra manera?
+  - text: Siento no entenderte. ¿Podrías expresarlo de otra manera?
+  - text: |-
+      Siento no haberte entendido. 
+
+       ¿Quizá puedas preguntármelo de otra manera? 😅
+  - text: Mil disculpas por no entenderte. ¿Me lo puedes preguntar de otra manera?
+  - text: Lo siento, ¿Serías tan amable de preguntármelo de otra manera?
+  - text: |-
+      Siento mucho no entenderte 😓. 
+
+       ¿Me lo podrías decir de otra forma?
+
+  utter_default:
+  - text: Lo siento, no te he entendido. ¿Podrías repetírmelo de otra manera?
+  - text: Me temo que no he podido entenderte. ¿Podrías expresarlo de otra manera?
+  - text: |-
+      Creo que no te entiendo 😅. 
+
+       ¿Puedes preguntármelo de otra forma?
+  - text: |-
+      Discúlpame pero no te he entendido 😓. 
+
+       ¿Me lo puedes preguntar de otra manera?
+  - text: Creo que no te he entendido, ¿serías tan amable de preguntármelo de otra manera?
+  - text: |-
+      Lo siento mucho pero no acabo de entenderte. 
+
+       ¿Me lo podrías decir de otra forma? 🙏

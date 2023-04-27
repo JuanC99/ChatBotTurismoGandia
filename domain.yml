@@ -1,0 +1,32 @@
+version: "3.1"
+
+intents:
+- saludar
+- despedirse
+- afirmar
+- negar
+- reaccionPositiva
+- reaccionNegativa
+- entender
+- noEntender
+- agradecer
+- esperar
+- pedirAyuda
+- quererPreguntar
+- masInformacion
+- noMeHasAyudado
+- indicarFallo
+- quePuedeHacer
+- pedirTema
+- reiniciar
+- animoAlto
+- animoBajo
+- preguntarEstado
+- playa
+- relleno
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+

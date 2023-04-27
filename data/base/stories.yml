@@ -1,0 +1,148 @@
+version: "3.1"
+
+stories:
+  - story: Saludar + ofrecer ayuda
+    steps:
+      - intent: saludar
+      - action: utter_saludar
+      - action: utter_ofrecerAyuda
+
+  - story: Saludar + asistencia + afirmar + volver a ofrecer asistencia
+    steps:
+      - intent: saludar
+      - action: utter_saludar
+      - action: utter_ofrecerAyuda
+      - intent: afirmar
+      - action: utter_ofrecerAyuda
+
+  - story: Preguntar como estas + reaccion positiva + alegrarse + ofrecer ayuda
+    steps:
+      - intent: preguntarEstado
+      - action: utter_estadoDeAnimo
+      - or:
+        - intent: reaccionPositiva
+        - intent: animoAlto
+      - action: utter_alegrarse
+      - action: utter_ofrecerAyuda
+
+  - story: Preguntar como estas + mal + entristecerse + ofrecer ayuda
+    steps:
+      - intent: preguntarEstado
+      - action: utter_estadoDeAnimo
+      - or:
+        - intent: reaccionNegativa
+        - intent: animoBajo
+      - action: utter_entristecerse
+      - action: utter_ofrecerAyuda
+
+  - story: Despedirse + recordar asistencia
+    steps:
+      - intent: despedirse
+      - action: utter_despedirse
+      - action: utter_recordarAsistencia
+
+  - story: Agradecer + no necesita nada más
+    steps:
+      - intent: agradecer
+      - action: utter_noHayDeQue
+      - action: utter_necesitasAlgoMas
+      - intent: negar
+      - action: utter_reaccionPositiva
+      - action: utter_recordarAsistencia
+
+  - story: Agradecer + necesita algo más
+    steps:
+      - intent: agradecer
+      - action: utter_noHayDeQue
+      - action: utter_necesitasAlgoMas
+      - intent: afirmar
+      - action: utter_ofrecerAyuda
+
+  - story: Ofrecer ayuda + no necesita nada
+    steps:
+      - action: utter_ofrecerAyuda
+      - intent: negar
+      - action: utter_reaccionPositiva
+      - action: utter_recordarAsistencia
+
+  - story: Más información
+    steps:
+      - intent: masInformacion
+      - action: utter_proporcionarMasInformacion
+
+  - story: Que puede hacer + ofrecer ayuda
+    steps:
+      - intent: quePuedeHacer
+      - action: utter_enQueTePuedoAyudar
+      - action: utter_ofrecerAyuda
+
+  - story: Que puede preguntar + animar a preguntar
+    steps:
+      - intent: quererPreguntar
+      - action: utter_enQueTePuedoAyudar
+      - action: utter_animarPreguntar
+
+  - story: Pedir que lo repita + no
+    steps:
+      - action: utter_default
+      - or:
+        - intent: negar
+        - intent: reaccionNegativa
+      - action: utter_conformidad
+      - action: utter_recordarAsistencia
+
+  - story: Pedir que lo repita + no 2
+    steps:
+      - action: utter_pedirRepetirPregunta
+      - or:
+        - intent: negar
+        - intent: reaccionNegativa
+      - action: utter_conformidad
+      - action: utter_recordarAsistencia
+
+  - story: Pedir que lo repita + si
+    steps:
+      - action: utter_default
+      - or:
+        - intent: afirmar
+        - intent: reaccionPositiva
+      - action: action_listen
+
+  - story: Pedir que lo repita + si 2
+    steps:
+      - action: utter_pedirRepetirPregunta
+      - or:
+        - intent: afirmar
+        - intent: reaccionPositiva
+      - action: action_listen
+
+  - story: No le ha sido de ayuda + disculparse + pedir que lo repita
+    steps:
+      - intent: noMeHasAyudado
+      - action: utter_disculparse
+      - action: utter_pedirRepetirPregunta
+
+  - story: No le entiende + pedir disculpas y pedir que lo repita
+    steps:
+      - intent: noEntender
+      - action: utter_disculpasPorNoEnteder
+
+  - story: No le entiende + pedir disculpas y pedir que lo repita + reaccion negativa
+    steps:
+      - intent: noEntender
+      - action: utter_disculpasPorNoEnteder
+      - or:
+        - intent: negar
+        - intent: reaccionNegativa
+      - action: utter_disculparse
+      - action: utter_recordarAsistencia
+
+  - story: No le entiende + pedir disculpas y pedir que lo repita + reaccion positiva
+    steps:
+      - intent: noEntender
+      - action: utter_disculpasPorNoEnteder
+      - or:
+        - intent: afirmar
+        - intent: reaccionPositiva
+      - action: utter_animarPreguntar
+

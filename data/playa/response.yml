@@ -1,0 +1,18 @@
+version: "3.1"
+
+responses:
+  # relleno
+  utter_playa/preguntarPorServicios:
+    - text: La playa de Gandia cuanta con servicios de socorrista, limpieza, asistencias para persans mayores, actividades y parque para niños.
+  utter_playa/preguntarPorKmPlaya:
+    - text: La playa de Gandia tiene una longitud de 7.5 km distribuidos entre la Playa Nord, una playa urbana equipada con los mejores servicios, playa de L'Auir, playa de Venècia y Rafalcaid al sur del Grao
+  utter_playa/preguntarPorZonasBañoAsistido:
+    - text: Las tres zonas, conocidas como Canarias, Manila y President, por estar situadas a la altura de estas calles perpendiculares al mar, disponen de aparcamiento reservado, áreas de sombra gratuitas, cabinas WC, duchas, silla ducha y cambiador. Todas las zonas cuentan con una silla amfibia para facilitar el acceso al mar.
+  utter_playa/preguntarPorSevicioSocorrista:
+    - text: El horario de los socorrista es de 10:00 a 18:30 aunque podria variar según la temporada en la que estes.
+  utter_playa/preguntarPorZonaToldosYHamacas:
+    - text: Puedes alquilar hamacas o sombrillas, por 5 € cada una. El horario de alquiler es de 10:00 a 19:00.
+  utter_playa/preguntarPorPlayaPerros:
+    - text: Desde el 2019 no existen playas para perros en Gandia. Antiguamente la playa de L'Auir, solia ser una playa a la que podias ir con tu perro pero debido a ciertas normas medioambientales tuvieron que cerrar la playa.
+ 
+

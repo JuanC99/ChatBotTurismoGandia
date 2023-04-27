@@ -1,0 +1,57 @@
+
+
+Preguntas más frecuentes en Tourist Info para crear chatbot
+
+Playa:
+7- ¿De que servicios podemos disfrutar en la playa?
+12- ¿Cuantos kms tiene la playa/ el paseo marítimo?
+17- ¿Cuáles son las zonas de baño asistido?
+18- ¿Hay playa para perros?
+20- ¿Que horario tiene el servicio de socorrismo?
+28- En que zonas hay toldos y hamacas? Que precios y horarios tienen?
+
+
+Servicios:
+1- ¿Como puedo reservar las visitas de la cueva del Parpalló o el Castillo de Bayren?
+22- ¿Donde puedo alquilar un coche / Biciclete?
+
+9- Horarios de transporte público
+24- ¿Que horarios tiene los chiringuitos?
+19- Precios, horarios y ruta de la marina
+
+21- ¿Hay wifi gratuito? -> retrieval intent
+
+29- Zonas aparcamiento autocaravana
+
+14- ¿Que pubs o discotecas están abiertos este fin de semana?
+
+6- ¿Dónde podemos comer una buena paella?
+
+
+
+Turismo:
+4- ¿Qué podemos hacer con niños pequeños?
+5- ¿Qué excursiones podemos hacer cerca de aquí? (Opción con coche y opción con transporte público)
+8- ¿Qué es lo más importante a visitar en la ciudad?
+15- Rutas de senderismo
+16- Rutas en bicicleta
+25- ¿Cuando hay mercadillo y donde?
+
+
+
+Otros:
+2- ¿Qué eventos hay esta semana/ este fin de semana?
+3- Mañana hay previsión de mal tiempo, ¿qué podemos hacer o qué podemos visitar?
+10- ¿Tenéis el full del mes que viene? ¿Tenéis la programación de verano/fallas/Fira i festes?
+11- Pregunta por calles
+13- Voy a ir próximamente de vacaciones a Gandía, tenemos que elegir entre estos dos apartamentos u hoteles, ¿me puedes ayudar a decidir cuál es mejor?
+27- ¿Donde encuentro un lugar de objetos perdidos?
+30- Planos valencia y alrededores
+
+
+
+
+TODO:
+-	Agrupar preguntas por intenciones
+-	Poner respuestas random de momento
+-	Hacer pruebas con Rasa

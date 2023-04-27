@@ -1,0 +1,12 @@
+version: "3.1"
+
+nlu:
+- synonym: km
+  examples: |
+    - KM
+    - Kilometros
+    - Kilometro
+- synonym: playa
+  examples: |
+    - Playa
+    - Playa de gandia

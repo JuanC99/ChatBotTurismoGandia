@@ -1,0 +1,67 @@
+version: "3.1"
+
+nlu:
+- intent: playa/preguntarPorServicios
+  examples: |
+    - ¿De que servicios podemos disfrutar en la playa?
+    - ¿Que servicios puedo encontrar en la playa?
+    - Que servicios tiene la playa?
+    - Que servicios podemos encontrar en la playa?
+    - Servicios de la playa?
+    - Que servicios hay en la playa?
+
+- intent: playa/preguntarPorKmPlaya
+  examples: |
+    - ¿cuántos km tiene la playa?
+    - Cuanto mide el paseo de la playa?
+    - cuantos km mide la playa
+    - Cual es la longitud del paseo de la playa?
+
+- intent: playa/preguntarPorZonasBañoAsistido
+  examples: |
+    - ¿Cuáles son las zonas de baño asistido?
+    - ¿Que zonas tienen baño asistido en la playa?
+    - ¿Cuáles son las zonas de baño asistido en la playa?
+    - Hay alguna zona con baño asistido en la playa?
+    - ¿La playa tiene zonas de baño asistida?
+    - Donde puedo encotrar las zonas de baño asistido
+
+- intent: playa/preguntarPorPlayaPerros
+  examples: |
+    - ¿Hay playa para perros?
+    - ¿Donde puedo encontrar una playa para perros?
+    - Existe alguna playa para perros?
+    - Hay alguna playa de perros?
+
+- intent: playa/preguntarPorSevicioSocorrista
+  examples: |
+    - ¿Que horario tiene el servicio de socorrismo?
+    - Que horario tiene el servicio de socorrism de la playa?
+    - En que horario puedo encontrar al socorrista?
+    - Que horario tiene el socorista?
+    - cuando puedo encontrar al socorrista en la playa?
+    
+- intent: playa/preguntarPorZonaToldosYHamacas
+  examples: |
+    - ¿En que zonas hay toldos y hamacas?
+    - La playa tiene toldos o hamacas?
+    - en la playa hay toldos o hamacas?
+    - donde estan los toldos o hamacas?
+    - en que sitio puedo encontrar los toldos?
+    - Canto cuesta un toldo?
+    - Cuanto cuesta una hamaca?
+    - Canto cuesta alquilar un toldo?
+    - Cuanto cuesta alquilar una hamaca?
+
+- intent: playa/preguntarPorChiringuitosPlaya
+  examples: |
+    - ¿hay chiringuitos en la playa?
+    - ¿que horario tienen los chiringuitos de la playa?
+- intent: playa/preguntarPorParkingPlaya
+  examples: |
+    - ¿La playa dispone de parking?
+    - la playa tiene parking?
+    - Hay parking en la playa?
+    - cuanto cuesta el parking
+    - tiene parking la playa de gandia?
+
