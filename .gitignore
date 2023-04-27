@@ -1,0 +1,10 @@
+venv/
+.DS_Store
+*.log
+models
+.vscode
+.rasa*
+events.*
+actions/__pycache__
+results/
+train_test_split/
