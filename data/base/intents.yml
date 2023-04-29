@@ -1,6 +1,9 @@
 version: "3.1"
 
 nlu:
+- intent: test
+  examples: |
+    - Testing
 - intent: saludar
   examples: |
     - Hola

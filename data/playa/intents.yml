@@ -26,13 +26,6 @@ nlu:
     - ¿La playa tiene zonas de baño asistida?
     - Donde puedo encotrar las zonas de baño asistido
 
-- intent: playa/preguntarPorPlayaPerros
-  examples: |
-    - ¿Hay playa para perros?
-    - ¿Donde puedo encontrar una playa para perros?
-    - Existe alguna playa para perros?
-    - Hay alguna playa de perros?
-
 - intent: playa/preguntarPorSevicioSocorrista
   examples: |
     - ¿Que horario tiene el servicio de socorrismo?
@@ -40,7 +33,7 @@ nlu:
     - En que horario puedo encontrar al socorrista?
     - Que horario tiene el socorista?
     - cuando puedo encontrar al socorrista en la playa?
-    
+
 - intent: playa/preguntarPorZonaToldosYHamacas
   examples: |
     - ¿En que zonas hay toldos y hamacas?
@@ -53,10 +46,6 @@ nlu:
     - Canto cuesta alquilar un toldo?
     - Cuanto cuesta alquilar una hamaca?
 
-- intent: playa/preguntarPorChiringuitosPlaya
-  examples: |
-    - ¿hay chiringuitos en la playa?
-    - ¿que horario tienen los chiringuitos de la playa?
 - intent: playa/preguntarPorParkingPlaya
   examples: |
     - ¿La playa dispone de parking?
@@ -65,3 +54,31 @@ nlu:
     - cuanto cuesta el parking
     - tiene parking la playa de gandia?
 
+- intent: playa/preguntarPorLlevarPerroPlaya
+  examples: |
+    - ¿Puedo entrar a la playa con el perro fuera de la hora de baño o fuera de temporada?
+    - ¿Puedo llevar a mi perro a la playa?
+    - ¿Puedo bañarme en la playa con mi perro?
+    - ¿Puedo entrar a la playa con el perro fuera de la hora de baño?
+    - ¿Puedo entrar a la playa con el perro fuera de temporada?
+
+- intent: playa/preguntarPorPlayaPerros
+  examples: |
+    - ¿Hay playa para perros?
+    - ¿Donde puedo encontrar una playa para perros?
+    - Existe alguna playa para perros?
+    - ¿Hay alguna playa de perros?
+    - ¿Donde hay playa para perros?
+- intent: playa/preguntarPorPlayaNudista
+  examples: |
+    - ¿Hay playa nudista?
+    - ¿Donde puedo encontrar una playa nudista?
+    - Existe alguna playa nudista?
+    - ¿Hay alguna playa nudista?
+    - ¿Donde hay playas nudistas?
+- intent: playa/preguntarPorKmPaseoEspigon
+  examples: |
+    - ¿Qué longitud tiene el paseo del espigón?
+    - ¿Cuanto mide el paseo del espigón?
+    - ¿Cuantos km mide el paseo del espigón?
+    - ¿Cuantos metros mide el paseo del espigón?

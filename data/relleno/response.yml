@@ -6,7 +6,7 @@ responses:
     - text: Soy una IA desarrollada con el objetivo de ayudar a la gente a concer mejor Gandia.
     - text: Soy una una IA programa por estudiantes de la UPV con la finalidad de ofrecer informacion sobre el turismo de Gandia. 
     - text: A simple vista puedo parecer una máquina, pero es mucho más complejo. Hay muchas personas detrás de mi mejorándome para poder resolver tus dudas.
-  utter_relleno/creadores:
+  utter_relleno/preguntarPorTuCreador:
     - text: Soy un proyecto de investigación creado por la Universitat Politècnica de València en colaboración con el ayuntamiento de Gandia.
   utter_relleno/preguntarPorNombre:
     - text: Mi nombre es TurisBot. Estoy aquí para ayudarte a conocer mejor Gandia.
@@ -35,3 +35,4 @@ responses:
     - text: Mi objetivo es ayudar a la gente a conocer un poco mas Gandia. ¿No sabes qué hacer? ¡Yo te ayudo!
     - text: Mi misión es ayudarte con cualquier duda que puedas tener sobre el turimos de Gandia.
     - text: Me han creado para resolver tus dudas sobre temas relacionados con el turismo en Gandia.
+ 

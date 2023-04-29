@@ -4,8 +4,9 @@ nlu:
 - synonym: km
   examples: |
     - KM
-    - Kilometros
-    - Kilometro
+    - Kilómetros
+    - Kilómetro
+    - kilomero
 - synonym: playa
   examples: |
     - Playa
