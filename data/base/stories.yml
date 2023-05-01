@@ -145,8 +145,3 @@ stories:
         - intent: afirmar
         - intent: reaccionPositiva
       - action: utter_animarPreguntar
-
-  - story: test
-    steps:
-      - intent: test
-      - action: action_hello_world

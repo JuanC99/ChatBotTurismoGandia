@@ -1,0 +1,14 @@
+version: "3.1"
+
+responses:
+  utter_preguntarPorAlquilerVehiculo:
+    - condition:
+        - type: slot
+          name: slot_vehiculo
+          value: coche
+      text: Aqui puedes alquilar una coche
+    - condition:
+        - type: slot
+          name: slot_vehiculo
+          value: bicicleta
+      text: Aqui puedes alquilar una bicicleta

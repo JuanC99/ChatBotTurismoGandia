@@ -11,3 +11,12 @@ nlu:
   examples: |
     - Playa
     - Playa de gandia
+- synonym: coche
+  examples: |
+    - Coche
+    - coxe
+    - carro
+- synonym: bicicleta
+  examples: |
+    - Bicicleta
+    - bici

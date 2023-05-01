@@ -24,10 +24,22 @@ intents:
 - preguntarEstado
 - playa
 - relleno
-- test
+- preguntarPorAlquilerVehiculo:
+    use_entities: true
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
 actions:
 - action_hello_world
 
+entities:
+- vehiculo
+
+slots:
+   slot_vehiculo:
+      type: text
+      mappings:
+      - type: from_entity
+        entity: vehiculo

@@ -1,0 +1,9 @@
+version: "3.1"
+
+rules:
+  - rule: Responder a servicios
+    steps:
+      - intent: preguntarPorAlquilerVehiculo
+        entities:
+        - vehiculo
+      - action: utter_preguntarPorAlquilerVehiculo
