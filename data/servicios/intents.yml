@@ -3,9 +3,9 @@ version: "3.1"
 nlu:
 - intent: preguntarPorAlquilerVehiculo
   examples: |
-    - ¿Dónde puedo alquilar un [coche]{"entity":"vehiculo","value":"coche"}?
-    - ¿Dónde puedo alquilar una [bicicleta]{"entity":"vehiculo","value":"bicicleta"}?
-
+    - ¿Dónde puedo alquilar un [coche](vehiculo)?
+    - ¿Dónde puedo alquilar una [bicicleta](vehiculo)?
+    - ¿Dónde puedo alquilar una [bici](vehiculo)?
 
 
 # - how much do I have on my [savings](account) account

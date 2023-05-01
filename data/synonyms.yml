@@ -13,10 +13,10 @@ nlu:
     - Playa de gandia
 - synonym: coche
   examples: |
-    - Coche
+    - coche
     - coxe
     - carro
 - synonym: bicicleta
   examples: |
-    - Bicicleta
+    - bicicleta
     - bici
