@@ -82,3 +82,9 @@ nlu:
     - ¿Cuanto mide el paseo del espigón?
     - ¿Cuantos km mide el paseo del espigón?
     - ¿Cuantos metros mide el paseo del espigón?
+- intent: playa/preguntarPorParkingPersonasConDiversidadFuncional
+  examples: |
+    - ¿Dónde hay aparcamiento para personas con diversidad funcional?
+    - ¿Donde puedo aparacar si padezco una minusvalia?
+    - ¿Existe una zona de parking para personas con diversidad funcional?
+    - ¿Donde puedo encontrar un parking para personas con diversidad funcional?

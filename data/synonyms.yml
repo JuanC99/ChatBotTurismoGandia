@@ -20,3 +20,13 @@ nlu:
   examples: |
     - bicicleta
     - bici
+- synonym: parking
+  examples: |
+    - aparcamiento
+    - zona de paking
+    - zona para aparcar
+- synonym: moto
+  examples: |
+    - moto
+    - motocicleta
+

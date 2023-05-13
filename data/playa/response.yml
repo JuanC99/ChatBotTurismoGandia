@@ -22,6 +22,9 @@ responses:
     - text: La playa nudista de Gandia se encuentra entre la playa de l’Ahuir y la playa de Xeraco, tratándose de un tramo de aproximadamente 2 kilómetros
   utter_playa/preguntarPorKmPaseoEspigon:
     - text: El paseo del espigón de la playa de Gandía tiene una longitud de 1.080 metros.
+  utter_playa/preguntarPorParkingPersonasConDiversidadFuncional:
+    - text: Zona de parking asistido con reserva. XXX
+
 
 
 

@@ -3,12 +3,66 @@ version: "3.1"
 nlu:
 - intent: preguntarPorAlquilerVehiculo
   examples: |
-    - ¿Dónde puedo alquilar un [coche](vehiculo)?
-    - ¿Dónde puedo alquilar una [bicicleta](vehiculo)?
-    - ¿Dónde puedo alquilar una [bici](vehiculo)?
+    - ¿Dónde puedo alquilar un [coche]{"entity":"vehiculo","value":"coche"}?
+    - Quiero alquilar un [coche]{"entity":"vehiculo","value":"coche"}.
+    - Me gustaría saber si tienen [coches]{"entity":"vehiculo","value":"coche"} disponibles para alquilar.
+    - ¿Tienen [coches]{"entity":"vehiculo","value":"coche"} disponibles para alquilar?
+    - ¿Tienen [coches]{"entity":"vehiculo","value":"coche"} automáticos disponibles para alquilar?
+    - ¿Dónde puedo alquilar una [bicicleta]{"entity":"vehiculo","value":"bici"}?
+    - Necesito alquilar una [bicicleta]{"entity":"vehiculo","value":"bici"} para hoy.
+    - Quiero saber si es posible alquilar una [bicicleta]{"entity":"vehiculo","value":"bici"}.
+    - ¿Cuál es el proceso para alquilar una [bicicleta]{"entity":"vehiculo","value":"bici"}?
+    - ¿Dónde puedo alquilar una [bici]{"entity":"vehiculo","value":"bici"}?
+    - Necesito alquilar una [bici]{"entity":"vehiculo","value":"bici"} para hoy.
+    - Quiero saber si es posible alquilar una [bici]{"entity":"vehiculo","value":"bici"}.
+    - ¿Cuál es el proceso para alquilar una [bici]{"entity":"vehiculo","value":"bici"}?
+    - ¿Dónde puedo alquilar una [moto]{"entity":"vehiculo","value":"moto"}?
+    - Estoy buscando una [moto]{"entity":"vehiculo","value":"moto"} para alquilar.
+    - ¿Cuál es el coste de alquilar una [moto]{"entity":"vehiculo","value":"moto"}?
+    - ¿Cuál es el proceso para alquilar una [moto]{"entity":"vehiculo","value":"moto"}?
+    - ¿Dónde puedo alquilar una [motocicleta]{"entity":"vehiculo","value":"moto"}?
+    - Estoy buscando una [motocicleta]{"entity":"vehiculo","value":"moto"} para alquilar.
+    - ¿Cuál es el coste de alquilar una [motocicleta]{"entity":"vehiculo","value":"moto"}?
+    - ¿Cuál es el proceso para alquilar una [motocicleta]{"entity":"vehiculo","value":"moto"}?
 
+- intent: preguntarPorAlquiler
+  examples: |
+    - ¿Dónde puedo alquila?
+    - Quiero alquilar un vehiculo
+    - Quiero alquilar
+    - Me puedes ayudar a alquilar un vehiculo?
+    - Qiero alquilar
+    - Donde hay para alquilar?
 
-# - how much do I have on my [savings](account) account
-# - ¿Me podrias decir donde alquilar un {vehiculo}?
-# - Quiero alquilar un {vehiculo} ¿donde podria hacerlo?
-# - ¿Como puedo alquilar un {vehiculo}?
+- intent: responderVehiculo
+  examples: |
+    - un [coche]{"entity":"vehiculo","value":"coche"}?
+    - [coche]{"entity":"vehiculo","value":"coche"}?
+    - una [bicicleta]{"entity":"vehiculo","value":"bici"}?
+    - una [bici]{"entity":"vehiculo","value":"bici"}?
+    - [bicicleta]{"entity":"vehiculo","value":"bici"}?
+    - [bici]{"entity":"vehiculo","value":"bici"}?
+    - [motocicleta]{"entity":"vehiculo","value":"moto"}
+    - una [motocicleta]{"entity":"vehiculo","value":"moto"}
+    - [moto]{"entity":"vehiculo","value":"moto"}
+    - una [moto]{"entity":"vehiculo","value":"moto"}
+
+- intent: servicios/preguntarPorWifiGratuito
+  examples: |
+    - ¿Donde puedo encontrar Wifi gratuito?
+    - ¿Hay wifi gratuito?
+    - ¿Que zonas de Gandia disponen de Wifi?
+    - ¿Donde puedo encontrar wifi?
+    - ¿Hay zonas de Wifi?
+- intent: servicios/preguntarPorObjetosPerdidos
+  examples: |
+    - ¿Dónde encuentro un lugar de objetos perdidos?
+    - ¿Dónde puedo reportar objetos perdidos?
+    - ¿Hay algún lugar donde pueda recuperar objetos perdidos?
+    - ¿Dónde debo ir si he perdido algo?
+    - ¿Existe una oficina de objetos perdidos en esta área?
+    - Necesito información sobre el servicio de objetos perdidos.
+    - ¿Dónde puedo buscar objetos perdidos en esta ciudad?
+    - ¿Cómo puedo recuperar un objeto perdido?
+    - ¿Qué debo hacer si he perdido algo en el transporte público?
+    - ¿Dónde se encuentra el departamento de objetos perdidos?

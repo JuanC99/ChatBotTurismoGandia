@@ -1,14 +1,32 @@
 version: "3.1"
 
 responses:
-  utter_preguntarPorAlquilerVehiculo:
-    - condition:
-        - type: slot
-          name: slot_vehiculo
-          value: coche
-      text: Aqui puedes alquilar una coche
-    - condition:
-        - type: slot
-          name: slot_vehiculo
-          value: bicicleta
-      text: Aqui puedes alquilar una bicicleta
+
+  # utter_respuestaAlquilerVehiculo:
+  #   - condition:
+  #       - type: slot
+  #         name: slot_vehiculo
+  #         value: coche
+  #     text: Aqui puedes alquilar una coche
+  #   - condition:
+  #       - type: slot
+  #         name: slot_vehiculo
+  #         value: bicicleta
+  #     text: Aqui puedes alquilar una bicicleta
+
+  utter_responderAlquiler:
+    - text: ¿Que tipo de vehiculo desaeas alquilar?
+  utter_responderAlquilerCoche:
+    - text: Aqui puedes alquilar un coche XXX
+  utter_responderAlquilerBicicleta:
+    - text: Aqui puedes alquilar una bicicleta XXX
+  utter_responderAlquilerMoto:
+    - text: Aqui puedes alquilar una moto XXX
+  utter_servicios/preguntarPorWifiGratuito:
+    - text: En la siguiente web puedes encontrar todos los puntos donde hay Wifi en Gandia https://wifi.gandia.org/
+  utter_servicios/preguntarPorObjetosPerdidos:
+    - text: Aqui tienes un listado de los centros donde puedes llevar los objetos encontrados o reclamar los objetos perdidos
+             -Pl. Major, 1 - Edificio del Ayuntamiento 
+             -Gran Vía Castell de Bayren, 1 - Central de Policía
+             -Carrer Dic Nord, 29 - Retén Policía Grao Gandia
+            O, llamando al teléfono 96 287 88 00.

@@ -22,10 +22,26 @@ intents:
 - animoAlto
 - animoBajo
 - preguntarEstado
-- playa
-- relleno
-- preguntarPorAlquilerVehiculo:
-    use_entities: true
+- preguntarPorAlquilerVehiculo
+- preguntarPorAlquiler
+- responderVehiculo
+
+
+entities:
+  - vehiculo
+
+slots:
+  vehiculo:
+    type: categorical
+    values:
+      - bici
+      - coche
+      - moto
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: vehiculo
+
 
 session_config:
   session_expiration_time: 60
@@ -33,13 +49,3 @@ session_config:
 
 actions:
 - action_hello_world
-
-entities:
-- vehiculo
-
-slots:
-   slot_vehiculo:
-      type: text
-      mappings:
-      - type: from_entity
-        entity: vehiculo

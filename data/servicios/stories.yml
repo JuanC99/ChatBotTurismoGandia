@@ -1,9 +1,104 @@
 version: "3.1"
 
-# stories:
-# - story: story with entities
-#   steps:
-#   - intent: preguntarPorAlquilerVehiculo
-#     entities:
-#     - vehiculo
-#   - action: utter_preguntarPorAlquilerVehiculo
+stories:
+- story: alquilar un vehiculo moto sin saber
+  steps:
+  - intent: preguntarPorAlquiler
+  - action: utter_responderAlquiler
+  - intent: responderVehiculo
+    entities:
+    - vehiculo:
+  - slot_was_set:
+    - vehiculo: moto
+  - action: utter_responderAlquilerMoto
+  
+- story: alquilar un vehiculo coche sin saber
+  steps:
+  - intent: preguntarPorAlquiler
+  - action: utter_responderAlquiler
+  - intent: responderVehiculo
+    entities:
+    - vehiculo
+  - slot_was_set:
+    - vehiculo: coche
+  - action: utter_responderAlquilerCoche
+
+- story: alquilar un vehiculo bicicleta sin saber
+  steps:
+  - intent: preguntarPorAlquiler
+  - action: utter_responderAlquiler
+  - intent: responderVehiculo
+    entities:
+    - vehiculo
+  - slot_was_set:
+    - vehiculo: bicicleta
+  - action: utter_responderAlquilerBicicleta
+
+- story: alquilar un vehiculo no reconocido sin saber
+  steps:
+  - intent: preguntarPorAlquiler
+  - action: utter_responderAlquiler
+  - intent: responderVehiculo
+    entities:
+    - vehiculo
+  - slot_was_set:
+    - vehiculo: __other__
+  - action: utter_disculpasPorNoEnteder
+
+- story: alquilar un vehiculo moto
+  steps:
+  - intent: preguntarPorAlquilerVehiculo
+    entities:
+    - vehiculo
+  - slot_was_set:
+    - vehiculo: moto
+  - action: utter_responderAlquilerMoto
+
+- story: alquilar un vehiculo bicicleta
+  steps:
+  - intent: preguntarPorAlquilerVehiculo
+    entities:
+    - vehiculo
+  - slot_was_set:
+    - vehiculo: bicicleta
+  - action: utter_responderAlquilerBicicleta
+
+
+- story: alquilar un vehiculo coche
+  steps:
+  - intent: preguntarPorAlquilerVehiculo
+    entities:
+    - vehiculo
+  - slot_was_set:
+    - vehiculo: coche
+  - action: utter_responderAlquilerCoche
+
+- story: alquilar un vehiculo no reconocido
+  steps:
+  - intent: preguntarPorAlquilerVehiculo
+    entities:
+    - vehiculo
+  - slot_was_set:
+    - vehiculo: __other__
+  - action: utter_disculpasPorNoEnteder
+
+# - intent: preguntarPorAlquilerVehiculo
+# - intent: preguntarPorAlquiler
+# - intent: responderVehiculo
+
+
+#   utter_responderAlquiler:
+#   utter_responderAlquilerCoche:
+#   utter_responderAlquilerBicicleta:
+#   utter_responderAlquilerMoto:
+
+
+  # - story: User likes music
+  #   steps:
+  #   - intent: how_to_get_started
+  #   - action: utter_get_started
+  #   - intent: affirm
+  #   - action: action_set_music_preference
+  #   - slot_was_set:
+  #     - likes_music: True
+  #   - action: utter_awesome

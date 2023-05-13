@@ -4,7 +4,7 @@ responses:
   utter_bienvenida:
   - text: ¡Hola soy TurisBot! encantado de conocerte! \n Puedo ayudarte con cualquier pregunta relacionada con el turismo de Gandia. \n Dime, ¿en qué puedo ayudarte?
   - text: ¡Hola! Soy TurisBot, encantado de hablar contigo \n Puedes realizarme cualquier pregunta relacionada con el turimos de Gandia. \n ¿En qué puedo ayudarte?
-  - text: '¡Hola, mi nombre es TurisBot! Puedes escribirme directamente tus dudas, y si no se te ocurre qué preguntar sobre el turismo de Gania, puedo ayudarte con alguno de estos temas:'
+  - text: ¡Hola, mi nombre es TurisBot! Puedes escribirme directamente tus dudas, y si no se te ocurre qué preguntar sobre el turismo de Gania, puedo ayudarte con alguno de estos temas:'
   
   utter_saludar:
   - text: ¡Hola!

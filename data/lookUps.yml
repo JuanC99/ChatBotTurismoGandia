@@ -1,6 +1,11 @@
-version: "3.1"
-nlu:
-- lookup: vehiculo
-  examples: |
-    - coche
-    - bicicleta
+# version: "3.1"
+# nlu:
+# - lookup: vehiculo
+#   examples: |
+#     - coche
+#     - coxe
+#     - carro
+#     - bicicleta
+#     - bici
+#     - moto
+#     - motocicleta
