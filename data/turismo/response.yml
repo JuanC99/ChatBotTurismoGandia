@@ -1,0 +1,35 @@
+
+responses:
+  utter_turismo/preguntarPorReservaCuevaParpallo:
+    - text: "Si se desea visitar la Cueva del Parpalló, se podrán reservar y/o adquirir las entradas en la web de turismo, en el apartado “Reservas on-line” https://visitgandia.com/gnd/Web_php/index.php?contenido=subapartados_coconut&id_boto=4586#services"
+  utter_turismo/preguntarPorReservaCastilloBairen:
+    - text: "En cuanto al Castillo de Bairén, para reservar y/o adquirir las entradas se podrá llamar al teléfono 962 959 540 o mandar un mail a la dirección de correo arquologia@gandia.org. Sin embargo, temporalmente no se realizan visitas debido a la realización de obras de acondicionamiento del espacio."
+  utter_turismo/preguntarPorActividadesNauticas:
+    - text: " En gandia puedes encontrar las siguientes actividades acuáticas:
+              - Remo
+              - Surf y Kite Surf
+              - Kayac y Piragua
+              - Motos acuáticas
+              - Pesca deportiva
+              - Hidropedales 
+              - Arrastre de Banana"
+  utter_turismo/preguntarPorVistaRegufigiosAntiaeros:
+    - text: " Los Refugios de la Guerra Civil de la Pescadería y del Prado. Se pueden visitar todos los sábados a las 11h, siendo el punto de encuentro para ello el Mirador dels Borja (detrás del Ayuntamiento). 
+              El precio es de 5€ por persona, excepto para los menores de 12 años, cuyo precio es de 2€.
+              Será necesario un número mínimo de 10 personas por grupo para poder realizarse la visita
+              Inscripción llamando al 667 69 74 48"
+
+  utter_responderRuta:
+    - text: ¿Que tipo de ruta (Sendrismo o ciclismo)?
+
+
+  utter_responderRutaCiclismo:
+    - text: "¡Aquí puedes encontrar rutas de ciclismo!
+              - https://www.komoot.com/es-es/guide/1632703/rutas-en-bici-en-real-de-gandia"
+
+  utter_responderRutaSenderismo:
+    - text: "¡Aquí puedes encontrar rutas de Senderismo!
+            -Ruta circular Marjal de Gandia “Entre Senill i Borrò” : https://visitgandia.com/gnd/Web_php/index.php?contenido=showRuta&id=1&id_pare=3&idNivel=4516&title=circular-marjal-de-gandia-entre-senill-i-borr 
+            -Ruta dels Borja, Xàtiva-Gandia : https://visitgandia.com/gnd/Web_php/index.php?contenido=showRuta&id=43&id_pare=3&idNivel=4516&title=ruta-dels-borja-xtiva-gandia 
+            -SL-CV80 Senda del Portale: https://visitgandia.com/gnd/Web_php/index.php?contenido=showRuta&id=6&id_pare=3&idNivel=4516&title=sl-cv80-senda-del-portalet 
+            -Aunque puedes encontrar muchas mas rutas en la siguiente web: https://visitgandia.com/routes/3/4516/senderismo.html"

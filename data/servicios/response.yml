@@ -1,32 +1,189 @@
 version: "3.1"
 
 responses:
-
-  # utter_respuestaAlquilerVehiculo:
-  #   - condition:
-  #       - type: slot
-  #         name: slot_vehiculo
-  #         value: coche
-  #     text: Aqui puedes alquilar una coche
-  #   - condition:
-  #       - type: slot
-  #         name: slot_vehiculo
-  #         value: bicicleta
-  #     text: Aqui puedes alquilar una bicicleta
-
   utter_responderAlquiler:
     - text: ¿Que tipo de vehiculo desaeas alquilar?
+  
   utter_responderAlquilerCoche:
-    - text: Aqui puedes alquilar un coche XXX
+    - text: "En Gandia exisiten una gran numero de empresas de alquiler de coches. Algunas con buenas valoraciones en Google son las siguientes:
+              - Rentacar Ducal: https://rentacarducal.com/
+              - Gandia Business: https://gandiabusiness.es/
+              - Enterprise: https://www.enterprise.es/"
+  
+  utter_responderAlquilerMotoAcuatica:
+    - text: " Algunos de los sitios de alquiler motos acuaticas:
+                - Xtreme Tours Gandia -> Tlf: 616 152 235
+                - Itours Adventure Gandía -> Mail: itours@itoursadventure.com Tlf: 698948274 
+                - Yumping -> Web: https://www.yumping.com/motos-de-agua/valencia/playa-de-gandia 
+                - Rent JetSki Valencia -> Tlf: 644 044 860"
+
   utter_responderAlquilerBicicleta:
-    - text: Aqui puedes alquilar una bicicleta XXX
+    - text: "En la web de Visit Gandia se puede encontrar una lista de lugares disponibles para el alquiler de bicicletas: 
+              https://www.visitgandia.com/turgan/web_php/index.php?contenido=apartadosComerciales&id=65&mode=list&order=asc&idNivel= "
+  
   utter_responderAlquilerMoto:
-    - text: Aqui puedes alquilar una moto XXX
+    - text: "En Gandia exisiten una gran número de empresas de alquiler de motos. Algunas con buenas valoraciones en Google son las siguientes:
+              - Moto Llopis: https://motollopis.es/alquiler-moto-gandia/
+              - Cool Moto Rent: https://coolmotorent.com/"
+  
   utter_servicios/preguntarPorWifiGratuito:
-    - text: En la siguiente web puedes encontrar todos los puntos donde hay Wifi en Gandia https://wifi.gandia.org/
+    - text: "En la siguiente web puedes encontrar todos los puntos donde hay Wifi en Gandia: https://wifi.gandia.org/"
+  
   utter_servicios/preguntarPorObjetosPerdidos:
-    - text: Aqui tienes un listado de los centros donde puedes llevar los objetos encontrados o reclamar los objetos perdidos
-             -Pl. Major, 1 - Edificio del Ayuntamiento 
-             -Gran Vía Castell de Bayren, 1 - Central de Policía
-             -Carrer Dic Nord, 29 - Retén Policía Grao Gandia
-            O, llamando al teléfono 96 287 88 00.
+    - text: "Aqui tienes un listado de los centros donde puedes llevar los objetos encontrados o reclamar los objetos perdidos:
+              -Pl. Major, 1 - Edificio del Ayuntamiento 
+              -Gran Vía Castell de Bayren, 1 - Central de Policía
+              -Carrer Dic Nord, 29 - Retén Policía Grao Gandia
+            O también puedes llamar al teléfono 96 287 88 00"
+  
+  utter_servicios/peguntarPorHorariosTransportesPublicos:
+    - text: "Aqui puedes encontrar el horario de los transporte publicos que hay en Gandia: 
+              - Tren Renfe: Los trenes de cercanía RENFE con destino Valencia salen de Gandia cada 30 minutos: http://www.gandiaturistica.com/renfe-gandia-valencia.htm
+              - Bus L´Urbà: Recorre el centro de la ciudad de Gandia. Este autobús moderno no llega hasta la playa pero sí que ofrece su servicio de transporte a los principales barrios de la ciudad: http://www.gandiaturistica.com/urba.htm
+              - Bus La marina: El autobús de transporte público La Marina comunica Gandia con su playa: http://www.gandiaturistica.com/la-marina.htm
+              - Taxis: Con servicios 24h, RadioTaxi Gandia. Tlf: 962 84 30 00
+            Si deseas mas información puedes visitar la siguiente página: http://www.gandiaturistica.com/transporte."
+  
+  utter_servicios/peguntarPorLoteria:
+    - text: "En la siguiente web puedes encontrar todas las administraciones de lotería que hay en Gandia:
+              https://www.paginasamarillas.es/a/administracion-de-loteria/valencia/gandia/"
+
+  utter_servicios/preguntarParkingAutocarvana:
+    - text: "El área de autocaravanas de Gandía (Valencia) es un parking mixto, situado en el Grau, frente al puerto de Gandía:  Av. de la Pau, 11 - 46730 - Grao de Gandía, Valencia
+            En el parking no hay ninguna clase de servicios para las autocaravanas, pero se permite la pernocta. Si desea más información puedes consultar la siguiente web: 
+            https://areascamper.com/ficha/area-de-autocaravanas-en-gandia/"
+
+  utter_servicios/preguntarPorRutaValenciaGandia:
+    - text: "Radiotaxi Gandia
+              -Gandia-Valencia AVE: 101€ diurno/117€ nocturno y festivo
+              -Gandia-Aeropuerto Alicante: 152€ diurno/178€ nocturno y festivo
+              -Gandia-Valencia Centro: 89€ diurno/103€ nocturno y festivo
+            
+            ALSA: 1h 35m, 11,55€
+
+            MetroValencia y Cercanías Renfe
+            Líneas de metro 2 o 5 desde el Aeropuerto a la estación de Xàtiva para posteriormente coger un tren de cercanías desde la Estació del Nord a Gandia."
+
+  utter_servicios/preguntarPorTaxiGandia:
+    - text: "Radiotaxi Gandia - 962 84 30 00"
+  
+  utter_servicios/preguntarPorCineGandia:
+    - text: "Cines ABC:  Gandia (Planta 1, CC La Vital) Av. La Vital, 10
+            Cines AXION Premium Gandia: (CC Plaza Mayor) Av. Blasco Ibáñez, 6"
+  
+  utter_servicios/preguntarPorMecadoCentral:
+    - text: "Si, está en la plaza del prado. También en el Grao de Gandia hay mercadillo los Jueves por la mañana y en la playa los domingos por la mañana desde Octubre a mayo y por la tarde desde Junio a Septiembre."
+  
+  utter_servicios/preguntarPorDulcesGandia:
+    - text: "Hay diferentes pastelerías que ofrecen dulces típicos de Gandia. Por ejemplo, en el Grao tienes David Vizcaino, El Forn del Passeig  y Vila. En Gandía, está Roselló."
+  
+  utter_servicios/preguntarPorCentrosSalud:
+    - text: "Centro de Salud de Gandía (Corea) - C/ Benissuai, 22
+            Teléfonos:
+              - Centro: 962 82 95 50
+              - Cita previa: 962 82 95 50
+              - Urgencias: 962 82 95 55
+
+            Centro de Salud de Gandía (Beniopa) - Av. De Beniopa, 33
+            Teléfonos:
+              - Centro: 962 82 64 00
+              - Mostrador: 962 82 64 00
+              - Urgencias: 962 82 64 10
+
+            Centro de Salud de Gandía (Grau) - C/ la Goleta, 17
+            Teléfonos: 
+              - Centro: 962 82 63 02
+              - Mostrador: 962 82 63 00
+              - Urgencias: 962 82 63 05
+
+            Hospital Comarcal Francesc de Borja -  Av. De la Medicina, 6
+            Teléfono: 962 84 95 00
+
+            IMED Gandía - C/ Ciutat de Barcelona, 29
+            Teléfono: 962 87 47 40"
+            
+  utter_servicios/preguntarPorPistasTenis:
+    - text: "Puedes alquilar pistas de Tenis y Padel en los siguientes lugar : 
+              Club de Tenis Gandia: http://www.clubtenisgandia.com/Pages/10-TARIFAS
+              Hotel Tres Anclas: https://www.hoteltresanclas.com/que-hacer/tenis-padel"
+  
+  utter_servicios/preguntarPorConsigna:
+    - text: "Existe varios servicios de consigna en gandia:
+              -http://www.clubtenisgandia.com/Pages/10-TARIFAS
+              -https://www.eelway.com/es/consigna-equipaje/gandia"
+
+  utter_servicios/preguntarPorBingo:
+    - text: "Av. República Argentina, 64-66
+              962 878 284
+              Abierto todos los días de 10:00h a 03:00h"
+
+  utter_servicios/preguntarPorPolicia:
+    - text: "Comisaría de Policía Nacional 
+              C/ Ciutat de Laval, 5
+              962 95 45 48
+              En la playa hay un servicio de policía local y nacional en el Moll dels Borgia"
+
+  utter_servicios/preguntarPorHorariosMisa:
+    - text: "Iglesia de San Pedro y San Pablo - Plaza del Temple, s/n 
+              Horario de verano ->
+                Lunes a Sábados: 09:30h y 20:30h
+                Víspera de festivo: 19:30h y 20:30h
+                Domingos y festivos: 09:30h, 19:30h y 20:30h
+              Horario de invierno ->
+                Víspera de festivo, domingos y festivos: 18:00h
+              
+              Iglesia de Santa María del Mar - C/ Armada Española, 7
+              Horario de verano ->
+                Lunes a Sábados: 09:30 y 20:00h
+                Vísperas de festivo: 20:00h y 21:00h
+                Domingos y festivos: 09:30, 20:00h y 21:00
+              Horario de invierno ->
+                Vísperas de festivo: 19:00h
+		            Domingos y festivos: 11:00h
+
+              Iglesia de San Nicolás de Bari - Avinguda de la Pau, 2
+              Horario de verano ->
+                Lunes a Sábados: 10:00h y 20:00h
+                Vísperas de festivo: 20:00h 
+                Domingos y festivos: 10:00, 12:00h y 20:00
+              Horario de invierno ->
+                Lunes a Sábados: 10:00h y 19:00h
+                Vísperas de festivo: 19:00h"
+
+  utter_servicios/preguntarPorLonja:
+    - text: "Domingos y festivos: 10:00h, 12:00h y 19:00h"
+
+  utter_servicios/preguntarPorLicensiaPescarPlaya:
+    - text: "Según la normativa de pesca de la Comunidad Valenciana, para el ejercicio de la pesca marítima de recreo es necesario que dispongamos de la licencia correspondiente expedida por la Comunidad Valenciana.
+https://wefish.app/es/normativa-de-pesca-comunidad-valenciana/#:~:text=%C2%BFQu%C3%A9%20especies%20podemos%20pescar%20en,expedida%20por%20la%20Comunidad%20Valenciana.
+"
+  utter_servicios/preguntarPorMercadillo:
+    - text: "Martes: 
+              -Barrio de Corea 
+              -Plaza Jardinet 
+              -Mercadillo Generalista. No hay productos de alimentación. De 8.00 a 14.00 horas.
+            Jueves: 
+              -Grao – Zona del puerto
+              -Plaza de La Marina. 
+              -Mercadillo Generalista. De 8.00 a 14.00 horas.
+            Viernes:
+              -Mercadillo Artesanal
+              -Plaza Escuelas Pías. 
+              -Mercadillo artesanal. De 14.00 a 20.00 horas. 
+            Sábado:
+              -Barrio de Roís de Corella
+              -Paseo Germanías (zona antiguo hospital). 
+              -Mercadillo Generalista. De 8.00 a 14.00 horas. 
+              -Mercado Vintage
+              -Plaza del Prado. Decoración. De 8.00 a 14.00 horas. PRIMER SÁBADO DE CADA MES
+            Domingo:
+              -Playa de Gandia
+              -Paseo Rosa dels Vents. Mercadillo Generalista. De 8.00 a 14.00. Verano: de 18.00 a 23.00 horas"
+
+  utter_servicios/preguntarPorMontarACaballo:
+    - text: "Centro Hípico Los Robles Gandía - Partida Brosquil, Playa de Gandía - 689 08 86 86
+            Rutas a Caballo Gandía - Camino Viejo de Valencia, 50 - 685 46 36 26"
+
+  utter_servicios/preguntarPorClubGolf:
+    - text: "Club de Golf de Gandía - Camino Viejo Grao de Gandía s/n - 962 87 32 08"
+

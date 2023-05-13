@@ -25,10 +25,14 @@ intents:
 - preguntarPorAlquilerVehiculo
 - preguntarPorAlquiler
 - responderVehiculo
+- preguntarPorRuta
+- preguntarPorRutaConcreta
+- responderSenderismo
 
 
 entities:
   - vehiculo
+  - tipoRuta
 
 slots:
   vehiculo:
@@ -42,6 +46,16 @@ slots:
     - type: from_entity
       entity: vehiculo
 
+slots:
+  vehiculo:
+    type: categorical
+    values:
+      - senderismo
+      - ciclismo
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: tipoRuta
 
 session_config:
   session_expiration_time: 60

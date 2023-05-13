@@ -1,0 +1,101 @@
+version: "3.1"
+
+nlu:
+- intent: preguntarPorRuta
+  examples: |
+    - ¿Me puedes recomendar una ruta?
+    - ¿Podrías sugerirme una ruta interesante para explorar?
+    - ¿Qué ruta me recomendarías para disfrutar del paisaje?
+    - ¿Conoces alguna ruta pintoresca que pueda recorrer?
+    - ¿Me podrías orientar sobre una ruta para hacer senderismo?
+    - ¿Sabes de alguna ruta turística recomendada en esta zona?
+    - ¿Cuál es una buena ruta para hacer en bicicleta?
+    - ¿Hay alguna ruta panorámica que valga la pena recorrer?
+    - ¿Me puedes indicar una ruta segura para correr?
+    - ¿Conoces alguna ruta histórica interesante por aquí?
+    - Me recomiendas alguna ruta?
+
+- intent: preguntarPorRutaConcreta
+  examples: |
+    - ¿Me puedes recomendar una ruta de [senderismo]{"entity":"tipoRuta","value":"senderismo"}?
+    - ¿Podrías sugerirme una ruta para hacer [senderismo]{"entity":"tipoRuta","value":"senderismo"}?
+    - ¿Qué ruta de [senderismo]{"entity":"tipoRuta","value":"senderismo"} me recomendarías?
+    - ¿Conoces alguna buena ruta para hacer [senderismo]{"entity":"tipoRuta","value":"senderismo"}?
+    - ¿Me podrías orientar sobre una ruta de [senderismo]{"entity":"tipoRuta","value":"senderismo"} interesante?
+    - ¿Sabes de alguna ruta de [senderismo]{"entity":"tipoRuta","value":"senderismo"} recomendada en esta área?
+    - ¿Cuál es una buena ruta de [senderismo]{"entity":"tipoRuta","value":"senderismo"} cercana?
+    - ¿Hay alguna ruta de [senderismo]{"entity":"tipoRuta","value":"senderismo"} pintoresca que valga la pena explorar?
+    - ¿Me puedes indicar una ruta de [senderismo]{"entity":"tipoRuta","value":"senderismo"} desafiante?
+    - ¿Conoces alguna ruta de [senderismo]{"entity":"tipoRuta","value":"senderismo"} con hermosos paisajes?
+    - ¿Me puedes recomendar una ruta de [ciclismo]{"entity":"tipoRuta","value":"ciclismo"}?
+    - ¿Podrías sugerirme una ruta para hacer [ciclismo]{"entity":"tipoRuta","value":"ciclismo"}?
+    - ¿Qué ruta de [ciclismo]{"entity":"tipoRuta","value":"ciclismo"} me recomendarías?
+    - ¿Conoces alguna buena ruta para hacer [ciclismo]{"entity":"tipoRuta","value":"ciclismo"}?
+    - ¿Me podrías orientar sobre una ruta de [ciclismo]{"entity":"tipoRuta","value":"ciclismo"} interesante?
+    - ¿Sabes de alguna ruta de [ciclismo]{"entity":"tipoRuta","value":"ciclismo"} recomendada en esta área?
+    - ¿Cuál es una buena ruta de [ciclismo]{"entity":"tipoRuta","value":"ciclismo"} cercana?
+    - ¿Hay alguna ruta de [ciclismo]{"entity":"tipoRuta","value":"ciclismo"} pintoresca que valga la pena explorar?
+    - ¿Me puedes indicar una ruta de [ciclismo]{"entity":"tipoRuta","value":"ciclismo"} desafiante?
+    - ¿Conoces alguna ruta de [ciclismo]{"entity":"tipoRuta","value":"ciclismo"} con hermosos paisajes?
+
+- intent: responderRuta
+  examples: |
+    - una ruta de [senderismo]{"entity":"tipoRuta","value":"senderismo"}
+    - [senderismo]{"entity":"tipoRuta","value":"senderismo"}
+    - [ciclismo]{"entity":"tipoRuta","value":"ciclismo"}
+    - una ruta de [ciclismo]{"entity":"tipoRuta","value":"ciclismo"}
+ 
+- intent: turismo/preguntarPorReservaCuevaParpallo
+  examples: |
+    - ¿Cómo puedo reservar las visitas de la cueva del Parpalló?
+    - Quiero saber cómo hacer una reserva para visitar la cueva del Parpalló
+    - ¿Cuál es el proceso de reserva para las visitas a la cueva del Parpalló?
+    - Estoy interesado en reservar un tour para la cueva del Parpalló, ¿cómo lo hago?
+    - Necesito información sobre cómo reservar las visitas guiadas a la cueva del Parpalló
+    - ¿Dónde puedo hacer la reserva para visitar la cueva del Parpalló?
+    - ¿Hay algún requisito especial para reservar las visitas a la cueva del Parpalló?
+    - Estoy planeando una visita a la cueva del Parpalló, ¿necesito hacer una reserva?
+    - ¿Cuál es el costo de reserva para visitar la cueva del Parpalló?
+    - Quiero reservar un espacio para la visita a la cueva del Parpalló, ¿cómo procedo?
+
+- intent: turismo/preguntarPorReservaCastilloBairen
+  examples: |
+    - ¿Cómo puedo reservar las visitas del Castillo de Bairén?
+    - Quiero saber cómo hacer una reserva para visitar el Castillo de Bairén
+    - ¿Cuál es el proceso de reserva para las visitas al Castillo de Bairén?
+    - Estoy interesado en reservar un tour para el Castillo de Bairén, ¿cómo lo hago?
+    - Necesito información sobre cómo reservar las visitas guiadas al Castillo de Bairén
+    - ¿Dónde puedo hacer la reserva para visitar el Castillo de Bairén?
+    - ¿Hay algún requisito especial para reservar las visitas al Castillo de Bairén?
+    - Estoy planeando una visita al Castillo de Bairén, ¿necesito hacer una reserva?
+    - ¿Cuál es el costo de reserva para visitar el Castillo de Bairén?
+    - Quiero reservar un espacio para la visita al Castillo de Bairén, ¿cómo procedo?
+
+- intent: turismo/preguntarPorActividadesNauticas
+  examples: |
+    - ¿Cuáles son las actividades acuáticas disponibles en la playa de Gandia?
+    - Me gustaría saber qué opciones de deportes acuáticos que hay en Gandia
+    - ¿Qué actividades actuaticas puedo hacer en la playa?
+    - ¿Hay algún lugar en Gandia donde pueda practicar deportes acuáticos?
+    - ¿Dónde puedo alquilar equipos para hacer actividades acuáticas?
+    - ¿Me podrías recomendar alguna actividad acuática en Gandia?
+    - ¿Puedo hacer paddle surf?
+    - Quiero saber si hay alguna actividad náutica para niños
+    - ¿Qué actividades acuáticas son las más populares?
+
+- intent: turismo/preguntarPorVistaRegufigiosAntiaeros
+  examples: |
+  nlu:
+- intent: turismo/preguntarPorVistaRefugiosAntiaereos
+  examples: |
+    - ¿Se pueden visitar los refugios antiaéreos?
+    - Quiero saber si es posible visitar los refugios antiaéreos
+    - ¿Cuál es la disponibilidad para visitar los refugios antiaéreos?
+    - Estoy interesado en hacer una visita a los refugios antiaéreos, ¿es posible?
+    - Necesito información sobre cómo visitar los refugios antiaéreos
+    - ¿Cuáles son los horarios de visita de los refugios antiaéreos?
+    - ¿Hay alguna tarifa de entrada para visitar los refugios antiaéreos?
+    - Quiero programar una visita a los refugios antiaéreos, ¿cómo lo hago?
+    - ¿Existen visitas guiadas a los refugios antiaéreos?
+    - ¿Cuál es la ubicación exacta de los refugios antiaéreos para poder visitarlos?
+

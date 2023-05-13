@@ -1,0 +1,71 @@
+version: "3.1"
+
+stories:
+- story: turismo
+  steps:
+  - intent: turismo
+  - action: utter_turismo
+
+- story: preguntar por ruta sin saber Senderismo
+  steps:
+  - intent: preguntarPorRuta
+  - action: utter_responderRuta
+  - intent: responderRuta
+    entities:
+    - tipoRuta
+  - slot_was_set:
+    - vehiculo: "senderismo"
+  - action: utter_responderRutaSenderismo
+
+- story: preguntar por ruta sin saber Ciclismo
+  steps:
+  - intent: preguntarPorRuta
+  - action: utter_responderRuta
+  - intent: responderRuta
+    entities:
+    - tipoRuta
+  - slot_was_set:
+    - vehiculo: "ciclismo"
+  - action: utter_responderRutaCiclismo
+
+- story: preguntar por ruta sin saber No reconocer
+  steps:
+  - intent: preguntarPorRuta
+  - action: utter_responderRuta
+  - intent: responderRuta
+    entities:
+    - tipoRuta
+  - slot_was_set:
+    - vehiculo: __other__
+  - action: utter_disculpasPorNoEnteder
+
+
+
+
+- story: preguntar por ruta Ciclista
+  steps:
+  - intent: preguntarPorRutaConcreta
+    entities:
+    - tipoRuta
+  - slot_was_set:
+    - vehiculo: ciclismo
+  - action: utter_responderRutaCiclismo
+
+
+- story: preguntar por ruta Senderismo
+  steps:
+  - intent: preguntarPorRutaConcreta
+    entities:
+    - tipoRuta
+  - slot_was_set:
+    - vehiculo: senderismo
+  - action: utter_responderRutaSenderismo
+
+- story: preguntar por ruta no reconocido
+  steps:
+  - intent: preguntarPorRutaConcreta
+    entities:
+    - tipoRuta
+  - slot_was_set:
+    - vehiculo: __other__
+  - action: utter_disculpasPorNoEnteder

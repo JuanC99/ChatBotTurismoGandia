@@ -1,6 +1,11 @@
 version: "3.1"
 
 stories:
+- story: servicios
+  steps:
+  - intent: servicios
+  - action: utter_servicios
+
 - story: alquilar un vehiculo moto sin saber
   steps:
   - intent: preguntarPorAlquiler
@@ -82,23 +87,22 @@ stories:
     - vehiculo: __other__
   - action: utter_disculpasPorNoEnteder
 
-# - intent: preguntarPorAlquilerVehiculo
-# - intent: preguntarPorAlquiler
-# - intent: responderVehiculo
+- story: alquilar un vehiculo acuatico
+  steps:
+  - intent: preguntarPorAlquilerVehiculo
+    entities:
+    - vehiculo
+  - slot_was_set:
+    - vehiculo: "moto acuatica"
+  - action: utter_responderAlquilerMotoAcuatica
 
-
-#   utter_responderAlquiler:
-#   utter_responderAlquilerCoche:
-#   utter_responderAlquilerBicicleta:
-#   utter_responderAlquilerMoto:
-
-
-  # - story: User likes music
-  #   steps:
-  #   - intent: how_to_get_started
-  #   - action: utter_get_started
-  #   - intent: affirm
-  #   - action: action_set_music_preference
-  #   - slot_was_set:
-  #     - likes_music: True
-  #   - action: utter_awesome
+- story: alquilar un vehiculo moto acuatica sin saber
+  steps:
+  - intent: preguntarPorAlquiler
+  - action: utter_responderAlquiler
+  - intent: responderVehiculo
+    entities:
+    - vehiculo
+  - slot_was_set:
+    - vehiculo: "moto acuatica"
+  - action: utter_responderAlquilerMotoAcuatica

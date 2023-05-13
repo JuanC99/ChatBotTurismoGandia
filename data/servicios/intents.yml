@@ -24,6 +24,28 @@ nlu:
     - Estoy buscando una [motocicleta]{"entity":"vehiculo","value":"moto"} para alquilar.
     - ¿Cuál es el coste de alquilar una [motocicleta]{"entity":"vehiculo","value":"moto"}?
     - ¿Cuál es el proceso para alquilar una [motocicleta]{"entity":"vehiculo","value":"moto"}?
+    - ¿Dónde puedo alquilar una [moto acuática]{"entity":"vehiculo","value":"moto acuatica"}?
+    - Quiero alquilar una [moto acuática]{"entity":"vehiculo","value":"moto acuatica"}.
+    - Me gustaría saber si tienen [motos acuáticas]{"entity":"vehiculo","value":"moto acuatica"} disponibles para alquilar.
+    - ¿Tienen [motos acuáticas]{"entity":"vehiculo","value":"moto acuatica"} disponibles para alquilar?
+    - ¿Cuál es el precio de alquilar una [moto acuática]{"entity":"vehiculo","value":"moto acuatica"}?
+    - ¿Cuál es el proceso para alquilar una [moto acuática]{"entity":"vehiculo","value":"moto acuatica"}?
+    - ¿Dónde puedo encontrar una [moto acuática]{"entity":"vehiculo","value":"moto acuatica"} para alquilar?
+    - Estoy buscando una [moto acuática]{"entity":"vehiculo","value":"moto acuatica"} para alquilar.
+    - ¿Cuál es el coste de alquilar una [moto acuática]{"entity":"vehiculo","value":"moto acuatica"} por una hora?
+    - ¿Hay restricciones de edad para alquilar una [moto acuática]{"entity":"vehiculo","value":"moto acuatica"}?
+    - ¿Cuál es la política de cancelación para el alquiler de una [moto acuática]{"entity":"vehiculo","value":"moto acuatica"}?
+    - ¿Dónde puedo alquilar una [moto de agua]{"entity":"vehiculo","value":"moto acuatica"}?
+    - Quiero alquilar una [moto de agua]{"entity":"vehiculo","value":"moto acuatica"}.
+    - Me gustaría saber si tienen [motos de agua]{"entity":"vehiculo","value":"moto acuatica"} disponibles para alquilar.
+    - ¿Tienen [motos de agua]{"entity":"vehiculo","value":"moto acuatica"} disponibles para alquilar?
+    - ¿Cuál es el precio de alquilar una [moto de agua]{"entity":"vehiculo","value":"moto acuatica"}?
+    - ¿Cuál es el proceso para alquilar una [moto de agua]{"entity":"vehiculo","value":"moto acuatica"}?
+    - ¿Dónde puedo encontrar una [moto de agua]{"entity":"vehiculo","value":"moto acuatica"} para alquilar?
+    - Estoy buscando una [moto de agua]{"entity":"vehiculo","value":"moto acuatica"} para alquilar.
+    - ¿Cuál es el coste de alquilar una [moto de agua]{"entity":"vehiculo","value":"moto acuatica"} por una hora?
+    - ¿Hay restricciones de edad para alquilar una [moto de agua]{"entity":"vehiculo","value":"moto acuatica"}?
+    - ¿Cuál es la política de cancelación para el alquiler de una [moto de agua]{"entity":"vehiculo","value":"moto acuatica"}?
 
 - intent: preguntarPorAlquiler
   examples: |
@@ -46,6 +68,8 @@ nlu:
     - una [motocicleta]{"entity":"vehiculo","value":"moto"}
     - [moto]{"entity":"vehiculo","value":"moto"}
     - una [moto]{"entity":"vehiculo","value":"moto"}
+    - una [moto acuatica]{"entity":"vehiculo","value":"moto acuatica"}
+    - una [moto de agua]{"entity":"vehiculo","value":"moto acuatica"}
 
 - intent: servicios/preguntarPorWifiGratuito
   examples: |
@@ -66,3 +90,258 @@ nlu:
     - ¿Cómo puedo recuperar un objeto perdido?
     - ¿Qué debo hacer si he perdido algo en el transporte público?
     - ¿Dónde se encuentra el departamento de objetos perdidos?
+
+- intent: servicios/peguntarPorHorariosTransportesPublicos
+  examples: |
+    - Horarios de transporte público.
+    - Precios, horarios y ruta de la marina.
+    - Me podrías decir los horarios del bus?
+    - Me podrías decir los horarios del transporte público?
+    - Dónde puedo ver los horarios del transporte público?
+    - Dónde puedo ver los horarios del bus?
+    - Dónde puedo encontrar los horarios del bus?
+    - Quiero saber los horarios del transporte público.
+    - ¿Cuáles son los horarios del bus?
+    - ¿Puedes darme información sobre los horarios del transporte público?
+    - Necesito conocer los horarios del bus.
+    - ¿Tienes información sobre los horarios del transporte público?
+    - ¿Dónde puedo obtener los horarios del bus?
+    - ¿Cuál es el horario del transporte público?
+    - ¿Sabes algo sobre los horarios del bus?
+    - ¿Cuál es el horario del bus?
+
+- intent: servicios/peguntarPorLoteria
+  examples: |
+    - ¿Dónde hay una administración de lotería?
+    - Donde puedo compra lotería?
+    - Quiero encontrar una administración de lotería cercana.
+    - ¿Puedes decirme la ubicación de una administración de lotería?
+    - Necesito saber dónde puedo encontrar una administración de lotería.
+    - Estoy buscando una administración de lotería, ¿puedes ayudarme?
+    - ¿Cuál es la dirección de una administración de lotería cercana?
+    - ¿Dónde puedo comprar boletos de lotería en esta zona?
+    - ¿Hay alguna administración de lotería en los alrededores?
+    - ¿Puedes recomendarme una administración de lotería confiable?
+    - ¿Dónde se encuentra la administración de lotería más cercana?
+    - Estoy interesado en encontrar una administración de lotería, ¿alguna sugerencia?
+
+- intent: servicios/preguntarParkingAutocarvana
+  examples: |
+    - Zonas de aparcamiento autocaravana.
+    - ¿Cuáles son las zonas de aparcamiento para autocaravanas en la ciudad?
+    - Necesito información sobre los parkings para autocaravanas.
+    - ¿Dónde puedo estacionar mi autocaravana de forma segura?
+    - ¿Hay algún estacionamiento específico para autocaravanas?
+    - ¿Cuáles son las áreas habilitadas para aparcar autocaravanas?
+    - ¿Puedo aparcar mi autocaravana cerca de la playa?
+    - ¿Hay restricciones de tamaño para aparcar una autocaravana en la ciudad?
+    - ¿Existe un parking vigilado para autocaravanas?
+    - ¿Dónde puedo encontrar un aparcamiento con servicios para autocaravanas?
+    - ¿Hay zonas gratuitas para aparcar autocaravanas en la ciudad?
+
+- intent: servicios/preguntarPorRutaValenciaGandia
+  examples: |
+    - ¿Cómo puedo llegar desde el aeropuerto de Valencia a Gandia?
+    - ¿Cuál es la mejor ruta para ir de Valencia a Gandia en transporte público?
+    - ¿Cuánto tiempo se tarda en llegar desde el aeropuerto de Valencia a Gandia?
+    - ¿Hay alguna opción de transporte directo desde Valencia hasta Gandia?
+    - ¿Cuál es la forma más rápida de llegar a Gandia desde el aeropuerto de Valencia?
+    - ¿Cuáles son las opciones de transporte disponibles desde Valencia hasta Gandia?
+    - ¿Hay autobuses que conecten Valencia con Gandia?
+    - ¿Dónde puedo encontrar información sobre los horarios de los trenes de Valencia a Gandia?
+    - ¿Cuál es la estación de tren más cercana a Gandia?
+
+- intent: servicios/preguntarPorTaxiGandia
+  examples: |
+    - ¿Cómo puedo conseguir un taxi?
+    - ¿Dónde puedo encontrar un servicio de taxis?
+    - ¿Cuál es el número de teléfono de los taxis?
+    - ¿Hay paradas de taxis en el centro de la ciudad?
+    - ¿Cuánto cuesta un taxi desde la estación de tren hasta el centro de Gandia?
+    - ¿Es fácil encontrar un taxi en las horas punta?
+    - ¿Puedo reservar un taxi con antelación?
+    - ¿Hay taxis disponibles en el aeropuerto de Gandia?
+    - ¿Cuáles son las empresas de taxis más conocidas?
+    - ¿Los taxis  aceptan pagos con tarjeta de crédito?
+
+- intent: servicios/preguntarPorCineGandia
+  examples: |
+    - "¿Dónde están los cines/cine de verano y programación?"
+    - "¿Cuál es el cine más cercano ?"
+    - "¿Qué películas están proyectando en el cine de Gandia?"
+    - "¿Hay cines al aire libre durante el verano ?"
+    - "¿Cuál es el horario de las películas en el cine de Gandia?"
+    - "¿Hay descuentos para estudiantes en el cine de Gandia?"
+    - "¿Cuál es el precio de las entradas de cine ?"
+    - "¿Hay alguna promoción especial en el cine de Gandia?"
+    - "¿Cuántas salas de cine hay?"
+    - "¿El cine de Gandia cuenta con tecnología 3D?"
+
+- intent: servicios/preguntarPorMecadoCentral
+  examples: |
+    - "¿Hay mercado central en la ciudad?"
+    - "¿Dónde se encuentra el mercado central de Gandia?"
+    - "¿Qué tipo de productos se pueden encontrar en el mercado central de Gandia?"
+    - "¿Cuál es el horario de apertura del mercado central ?"
+    - "¿Hay puestos de comida en el mercado central de Gandia?"
+    - "¿Se celebran eventos o ferias en el mercado central de Gandia?"
+    - "¿El mercado central de Gandia tiene estacionamiento cercano?"
+    - "¿Qué días de la semana está abierto el mercado central de Gandia?"
+    - "¿Hay tiendas de productos locales en el mercado central de Gandia?"
+    - "¿Se puede encontrar pescado fresco en el mercado central de Gandia?"
+  
+- intent: servicios/preguntarPorDulcesGandia
+  examples: |
+    - "¿Dónde puedo comprar dulces típicos de Gandia?"
+    - "¿Cuáles son las tiendas de dulces tradicionales?"
+    - "¿Hay alguna pastelería recomendada para comprar dulces?"
+    - "¿Dónde puedo encontrar turrones y mazapanes ?"
+    - "¿Hay tiendas especializadas en productos de repostería?"
+    - "¿Cuáles son los dulces típicos de la región de Gandia?"
+    - "¿Cuál es la tienda de dulces más antigua?"
+    - "¿Se pueden comprar dulces a granel?"
+    - "¿Existen opciones de dulces sin azúcar?"
+    - "¿Las pastelerías  ofrecen servicio de entrega a domicilio?"
+
+- intent: servicios/preguntarPorCentrosSalud
+  examples: |
+    - "¿Dónde se encuentra el centro de salud más cercano?"
+    - "¿Cuál es el hospital más cercano?"
+    - "¿Dónde puedo encontrar atención médica?"
+    - "¿Cuál es el centro médico público más cercano?"
+    - "¿Hay clínicas privadas  para recibir atención médica?"
+    - "¿Cuáles son los servicios de urgencias disponibles?"
+    - "¿Hay algún centro de salud especializado en pediatría?"
+    - "¿Dónde puedo encontrar un dentista?"
+    - "¿Existe un centro de salud que atienda las 24 horas?"
+    - "¿Cuáles son los horarios de atención en el centro de salud más cercano?"
+
+
+- intent: servicios/preguntarPorPistasTenis
+  examples: |
+    - "¿Dónde se pueden alquilar pistas de tenis?"
+    - "¿Hay pistas de pádel disponibles para alquilar?"
+    - "¿Cuál es el precio del alquiler de pistas de tenis?"
+    - "¿Hay descuentos disponibles para el alquiler de pistas de tenis?"
+    - "¿Es necesario hacer una reserva previa para alquilar pistas de tenis?"
+    - "¿Cuáles son las instalaciones deportivas que cuentan con pistas de tenis?"
+    - "¿Se ofrecen clases de tenis o pádel en las pistas de Gandia?"
+    - "¿Las pistas de tenis  cuentan con iluminación para jugar por la noche?"
+    - "¿Existen opciones de alquiler de raquetas y pelotas en las pistas de tenis de Gandia?"
+    - "¿Hay vestuarios y duchas disponibles cerca de las pistas de tenis?"
+
+- intent: servicios/preguntarPorConsigna
+  examples: |
+    - "¿Existe algún servicio de consigna para dejar las maletas?"
+    - "¿Dónde puedo dejar mis maletas de forma segura hasta la hora de salida del bus/tren?"
+    - "¿Cuál es el precio por utilizar el servicio de consigna ?"
+    - "¿Hay limitaciones de tiempo para utilizar el servicio de consigna ?"
+    - "¿El servicio de consigna  opera los fines de semana y días festivos?"
+    - "¿Dónde se encuentran ubicadas las consignas ?"
+    - "¿Puedo dejar maletas de gran tamaño en el servicio de consigna ?"
+    - "¿Se puede acceder a las maletas almacenadas en la consigna en cualquier momento?"
+    - "¿El servicio de consigna  ofrece seguro para las maletas almacenadas?"
+    - "¿Hay restricciones sobre los objetos que se pueden dejar en la consigna ?"
+- intent: servicios/preguntarPorBingo
+  examples: |
+    - "¿Dónde puedo encontrar un bingo cerca?"
+    - "¿Cuál es la ubicación del bingo más cercano?"
+    - "¿Podrías decirme la dirección de un bingo en la zona?"
+    - "¿Conoces algún lugar donde se juegue al bingo?"
+    - "¿Sabes dónde puedo encontrar un establecimiento de bingo?"
+    - "¿Hay algún bingo popular en esta área?"
+    - "¿Puedes recomendarme un lugar para jugar al bingo?"
+    - "Estoy buscando un bingo. ¿Alguna sugerencia?"
+    - "¿Conoces algún lugar donde organizen partidas de bingo?"
+    - "¿Hay algún bingo conocido en esta ciudad?"
+
+- intent: servicios/preguntarPorPolicia
+  examples: |
+    - "¿Dónde puedo encontrar una comisaría para presentar una denuncia?"
+    - "Necesito contactar a la policía para hacer una denuncia, ¿dónde puedo encontrar una estación de policía cercana?"
+    - "¿Cuál es la ubicación de la comisaría más cercana?"
+    - "¿Dónde puedo encontrar a la policía nacional en caso de emergencia?"
+    - "¿Puedes indicarme dónde se encuentra la estación de policía más cercana?"
+    - "¿Hay una comisaría de policía cerca de aquí?"
+    - "Quiero hacer una denuncia, ¿dónde puedo encontrar una estación de policía?"
+    - "¿Dónde está ubicada la policía nacional en esta área?"
+    - "Necesito reportar un incidente, ¿dónde puedo encontrar la estación de policía más cercana?"
+    - "¿Dónde puedo presentar una denuncia ante la policía?"
+
+- intent: servicios/preguntarPorHorariosMisa
+  examples: |
+    - "¿Cuáles son los horarios de las misas en las iglesias de esta ciudad?"
+    - "¿En qué horarios se celebran las misas en las iglesias cercanas?"
+    - "¿Puedes proporcionarme información sobre los horarios de misa en las iglesias de la zona?"
+    - "Quisiera saber los horarios de las misas en las iglesias locales, ¿me puedes ayudar?"
+    - "¿A qué hora se llevan a cabo las misas en las iglesias de esta localidad?"
+    - "Estoy interesado en asistir a una misa, ¿puedes decirme los horarios en las iglesias cercanas?"
+    - "¿Cuándo se celebran las misas en las iglesias de la playa?"
+    - "Necesito conocer los horarios de las misas en las iglesias de esta área, ¿me puedes ayudar?"
+    - "¿Dónde puedo encontrar información sobre los horarios de las misas en las iglesias de esta ciudad?"
+    - "Estoy buscando los horarios de las misas en las iglesias locales, ¿puedes decirme más al respecto?"
+
+- intent: servicios/preguntarPorLonja
+  examples: |
+    - "¿Es posible visitar la lonja? ¿Cuáles son sus horarios?"
+    - "Me gustaría saber si puedo hacer una visita a la lonja y qué horarios tiene."
+    - "¿La lonja está abierta al público? ¿En qué horarios?"
+    - "¿Se permite la visita a la lonja? Me gustaría saber más sobre sus horarios."
+    - "¿Cuál es el horario de visitas de la lonja? Me gustaría conocer más sobre ella."
+    - "Quisiera visitar la lonja, ¿me puedes decir en qué horarios está abierta?"
+    - "¿La lonja ofrece visitas guiadas? ¿Cuándo puedo ir?"
+    - "Me interesa visitar la lonja, ¿me puedes proporcionar información sobre sus horarios de apertura?"
+    - "¿Cuándo puedo visitar la lonja? ¿Tiene horarios específicos?"
+    - "Estoy interesado en visitar la lonja, ¿puedes decirme cuándo está abierta?"
+
+- intent: servicios/preguntarPorLicensiaPescarPlaya
+  examples: |
+    - "¿Es necesario tener una licencia para pescar en la playa?"
+    - "¿Se requiere algún tipo de permiso para pescar en la playa?"
+    - "Quiero pescar en la playa, ¿necesito obtener una licencia?"
+    - "¿Cuál es el requisito de licencia para pescar en la playa?"
+    - "¿Hay alguna regulación sobre la licencia de pesca en la playa?"
+    - "Estoy interesado en la pesca en la playa, ¿debo obtener una licencia?"
+    - "¿Se necesita un permiso especial para pescar en las playas de esta área?"
+    - "¿Es obligatorio tener una licencia de pesca para pescar en las playas locales?"
+    - "Quiero pescar en la playa, ¿puedes decirme si se requiere una licencia?"
+    - "¿Hay alguna restricción o requisito de licencia para pescar en las playas de aquí?"
+
+- intent: servicios/preguntarPorMercadillo
+  examples: |
+    - "¿Cuándo se lleva a cabo el mercadillo y dónde?"
+    - "Estoy interesado en el mercadillo, ¿puedes decirme la fecha y ubicación?"
+    - "¿En qué días y lugares se realiza el mercadillo?"
+    - "Quisiera saber cuándo y dónde se organiza el mercadillo."
+    - "¿Hay algún horario establecido para el mercadillo y cuál es su ubicación?"
+    - "Me gustaría visitar el mercadillo, ¿puedes decirme cuándo y dónde se celebra?"
+    - "¿Dónde y en qué fechas puedo encontrar el mercadillo?"
+    - "¿Cuándo y dónde se realiza el mercadillo local?"
+    - "Estoy interesado en asistir al mercadillo, ¿me puedes proporcionar la información de fecha y lugar?"
+    - "¿Cuál es la ubicación y horario del mercadillo en esta área?"
+
+- intent: servicios/preguntarPorMontarACaballo
+  examples: |
+    - "¿Dónde puedo encontrar lugares para montar a caballo?"
+    - "Estoy interesado en montar a caballo, ¿dónde puedo hacerlo?"
+    - "¿Existen centros o establos cercanos donde pueda montar a caballo?"
+    - "Quiero disfrutar de la experiencia de montar a caballo, ¿hay algún lugar recomendado por aquí?"
+    - "¿Cuáles son las opciones disponibles para montar a caballo en esta zona?"
+    - "Me gustaría saber dónde puedo montar a caballo en esta área."
+    - "¿Hay algún centro ecuestre o club donde pueda montar a caballo en las cercanías?"
+    - "Estoy buscando lugares para montar a caballo, ¿me puedes sugerir algunos en esta región?"
+    - "¿Dónde puedo encontrar servicios de equitación en esta localidad?"
+    - "¿Existe alguna escuela de equitación o centro ecuestre donde pueda montar a caballo en esta área?"
+
+- intent: servicios/preguntarPorClubGolf
+  examples: |
+    - "¿Cuál es el club de golf más cercano?"
+    - "Estoy interesado en jugar al golf, ¿dónde puedo encontrar el club más cercano?"
+    - "¿Hay algún club de golf en las proximidades?"
+    - "Quiero jugar al golf, ¿dónde está ubicado el club de golf más cercano?"
+    - "¿Cuál es el club de golf más cercano a esta área?"
+    - "Me gustaría practicar golf, ¿dónde puedo encontrar el club más cercano?"
+    - "¿Dónde puedo encontrar un club de golf cerca de aquí?"
+    - "Estoy buscando un lugar para jugar al golf, ¿me puedes recomendar un club cercano?"
+    - "¿Existe algún club de golf en esta localidad?"
+    - "¿Cuál es el club de golf más cercano que puedo visitar?"
