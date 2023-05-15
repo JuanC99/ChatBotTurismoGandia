@@ -25,7 +25,9 @@ nlu:
     - ¿Cuál es el coste de alquilar una [motocicleta]{"entity":"vehiculo","value":"moto"}?
     - ¿Cuál es el proceso para alquilar una [motocicleta]{"entity":"vehiculo","value":"moto"}?
     - ¿Dónde puedo alquilar una [moto acuática]{"entity":"vehiculo","value":"moto acuatica"}?
+    - ¿Dónde puedo alquilar [motos acuáticas]{"entity":"vehiculo","value":"moto acuatica"}?
     - Quiero alquilar una [moto acuática]{"entity":"vehiculo","value":"moto acuatica"}.
+    - Me gustaría saber si tienen [motos acuáticas]{"entity":"vehiculo","value":"moto acuatica"} disponibles para alquilar.
     - Me gustaría saber si tienen [motos acuáticas]{"entity":"vehiculo","value":"moto acuatica"} disponibles para alquilar.
     - ¿Tienen [motos acuáticas]{"entity":"vehiculo","value":"moto acuatica"} disponibles para alquilar?
     - ¿Cuál es el precio de alquilar una [moto acuática]{"entity":"vehiculo","value":"moto acuatica"}?

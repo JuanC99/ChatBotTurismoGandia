@@ -14,6 +14,9 @@ nlu:
     - ¿Me puedes indicar una ruta segura para correr?
     - ¿Conoces alguna ruta histórica interesante por aquí?
     - Me recomiendas alguna ruta?
+    - Hay alguna ruta en Gandia?
+    - Hay algunas rutas en Gandia?
+    - Hay alguna ruta?
 
 - intent: preguntarPorRutaConcreta
   examples: |
@@ -83,10 +86,7 @@ nlu:
     - Quiero saber si hay alguna actividad náutica para niños
     - ¿Qué actividades acuáticas son las más populares?
 
-- intent: turismo/preguntarPorVistaRegufigiosAntiaeros
-  examples: |
-  nlu:
-- intent: turismo/preguntarPorVistaRefugiosAntiaereos
+- intent: turismo/preguntarPorVisitaRefugiosAntiaereos
   examples: |
     - ¿Se pueden visitar los refugios antiaéreos?
     - Quiero saber si es posible visitar los refugios antiaéreos

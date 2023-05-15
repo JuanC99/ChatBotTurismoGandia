@@ -14,7 +14,7 @@ stories:
     entities:
     - tipoRuta
   - slot_was_set:
-    - vehiculo: "senderismo"
+    - tipoRuta: "senderismo"
   - action: utter_responderRutaSenderismo
 
 - story: preguntar por ruta sin saber Ciclismo
@@ -25,7 +25,7 @@ stories:
     entities:
     - tipoRuta
   - slot_was_set:
-    - vehiculo: "ciclismo"
+    - tipoRuta: "ciclismo"
   - action: utter_responderRutaCiclismo
 
 - story: preguntar por ruta sin saber No reconocer
@@ -36,11 +36,8 @@ stories:
     entities:
     - tipoRuta
   - slot_was_set:
-    - vehiculo: __other__
+    - tipoRuta: __other__
   - action: utter_disculpasPorNoEnteder
-
-
-
 
 - story: preguntar por ruta Ciclista
   steps:
@@ -48,7 +45,7 @@ stories:
     entities:
     - tipoRuta
   - slot_was_set:
-    - vehiculo: ciclismo
+    - tipoRuta: ciclismo
   - action: utter_responderRutaCiclismo
 
 
@@ -58,7 +55,7 @@ stories:
     entities:
     - tipoRuta
   - slot_was_set:
-    - vehiculo: senderismo
+    - tipoRuta: senderismo
   - action: utter_responderRutaSenderismo
 
 - story: preguntar por ruta no reconocido
@@ -67,5 +64,5 @@ stories:
     entities:
     - tipoRuta
   - slot_was_set:
-    - vehiculo: __other__
+    - tipoRuta: __other__
   - action: utter_disculpasPorNoEnteder

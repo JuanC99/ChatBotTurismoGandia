@@ -27,8 +27,11 @@ intents:
 - responderVehiculo
 - preguntarPorRuta
 - preguntarPorRutaConcreta
-- responderSenderismo
-
+- responderRuta
+- playa
+- turismo
+- servicios
+- relleno
 
 entities:
   - vehiculo
@@ -38,20 +41,20 @@ slots:
   vehiculo:
     type: categorical
     values:
-      - bici
-      - coche
-      - moto
+      - "bici"
+      - "coche"
+      - "moto"
+      - "moto acuatica"
     influence_conversation: true
     mappings:
     - type: from_entity
       entity: vehiculo
-
-slots:
-  vehiculo:
+      
+  tipoRuta:
     type: categorical
     values:
-      - senderismo
-      - ciclismo
+      - "senderismo"
+      - "ciclismo"
     influence_conversation: true
     mappings:
     - type: from_entity

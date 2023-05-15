@@ -16,7 +16,7 @@ nlu:
     - coche
     - coxe
     - carro
-- synonym: bicicleta
+- synonym: bici
   examples: |
     - bicicleta
     - bici

@@ -1,4 +1,4 @@
-
+version: "3.1"
 responses:
   utter_turismo/preguntarPorReservaCuevaParpallo:
     - text: "Si se desea visitar la Cueva del Parpalló, se podrán reservar y/o adquirir las entradas en la web de turismo, en el apartado “Reservas on-line” https://visitgandia.com/gnd/Web_php/index.php?contenido=subapartados_coconut&id_boto=4586#services"
@@ -13,7 +13,7 @@ responses:
               - Pesca deportiva
               - Hidropedales 
               - Arrastre de Banana"
-  utter_turismo/preguntarPorVistaRegufigiosAntiaeros:
+  utter_turismo/preguntarPorVisitaRefugiosAntiaereos:
     - text: " Los Refugios de la Guerra Civil de la Pescadería y del Prado. Se pueden visitar todos los sábados a las 11h, siendo el punto de encuentro para ello el Mirador dels Borja (detrás del Ayuntamiento). 
               El precio es de 5€ por persona, excepto para los menores de 12 años, cuyo precio es de 2€.
               Será necesario un número mínimo de 10 personas por grupo para poder realizarse la visita
