@@ -949,8 +949,8 @@ nlu:
 - intent: preguntarEstado
   examples: |
     - ¿Cómo estás?
-    - Hola Irene, cómo estás?
-    - hola salva, como estas
+    - Hola, cómo estás?
+    - hola, como estas
     - hola como estas?
     - como estas
     - q tal estas

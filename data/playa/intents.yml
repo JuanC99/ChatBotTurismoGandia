@@ -9,6 +9,11 @@ nlu:
     - Que servicios podemos encontrar en la playa?
     - Servicios de la playa?
     - Que servicios hay en la playa?
+    - De que servicios podemos disfrutar en la playa
+    - Que servicios puedo encontrar en la playa
+    - Que servicios tiene la paya
+    - Que servicios podemos encontrar en la paya
+    - Servicios de la playa
 
 - intent: playa/preguntarPorKmPlaya
   examples: |

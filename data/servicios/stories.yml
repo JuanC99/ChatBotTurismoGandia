@@ -36,7 +36,7 @@ stories:
     entities:
     - vehiculo
   - slot_was_set:
-    - vehiculo: bicicleta
+    - vehiculo: bici
   - action: utter_responderAlquilerBicicleta
 
 - story: alquilar un vehiculo no reconocido sin saber
@@ -65,7 +65,7 @@ stories:
     entities:
     - vehiculo
   - slot_was_set:
-    - vehiculo: bicicleta
+    - vehiculo: bici
   - action: utter_responderAlquilerBicicleta
 
 
@@ -106,3 +106,4 @@ stories:
   - slot_was_set:
     - vehiculo: "moto acuatica"
   - action: utter_responderAlquilerMotoAcuatica
+  

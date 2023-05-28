@@ -10,3 +10,12 @@ rules:
     steps:
       - intent: pedirAyuda
       - action: utter_ofrecerAyuda
+
+  - rule: pedir repetir pregunta
+    steps:
+      - intent: nlu_fallback
+      - action: utter_default
+
+  - rule: iniciar conversasion
+    steps:
+      - action: action_dar_bienvenida
