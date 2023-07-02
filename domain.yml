@@ -32,6 +32,7 @@ intents:
 - turismo
 - servicios
 - relleno
+- preguntarPorSitioTuristico
 
 entities:
   - vehiculo
@@ -67,3 +68,4 @@ session_config:
 actions:
 - action_hello_world
 - action_dar_bienvenida
+- action_recomendar_turismo

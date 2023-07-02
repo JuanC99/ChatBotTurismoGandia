@@ -20,6 +20,7 @@ nlu:
 
 - intent: preguntarPorRutaConcreta
   examples: |
+    - ¿Hay rutas de senderismo interesantes [senderismo]{"entity":"tipoRuta","value":"senderismo"} en los alrededores de Gandia?
     - ¿Me puedes recomendar una ruta de [senderismo]{"entity":"tipoRuta","value":"senderismo"}?
     - ¿Podrías sugerirme una ruta para hacer [senderismo]{"entity":"tipoRuta","value":"senderismo"}?
     - ¿Qué ruta de [senderismo]{"entity":"tipoRuta","value":"senderismo"} me recomendarías?
@@ -98,4 +99,20 @@ nlu:
     - Quiero programar una visita a los refugios antiaéreos, ¿cómo lo hago?
     - ¿Existen visitas guiadas a los refugios antiaéreos?
     - ¿Cuál es la ubicación exacta de los refugios antiaéreos para poder visitarlos?
+
+- intent: preguntarPorSitioTuristico
+  examples: |
+    - ¿Que me recomiendas hacer en Gandia?
+    - ¿Que me recomiendas hacer hoy?
+    - ¿Qué puedo hacer en Gandia hoy?
+    - ¿Cuáles son los lugares turísticos en Gandia?
+    - ¿Dónde puedo encontrar sitios de interés en Gandia?
+    - ¿Qué lugares debo visitar en Gandia durante mi estancia?
+    - ¿Hay alguna atracción turística en Gandia que no debería perderme?
+    - ¿Cuáles son los mejores sitios para visitar en Gandia?
+    - ¿Qué opciones turísticas hay disponibles en Gandia?
+    - ¿Qué me recomiendas hacer durante mi visita a Gandia?
+    - ¿Cuáles son los puntos de interés más populares en Gandia?
+    - ¿Qué sitios históricos puedo visitar en Gandia?
+
 

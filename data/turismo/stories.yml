@@ -66,3 +66,8 @@ stories:
   - slot_was_set:
     - tipoRuta: __other__
   - action: utter_disculpasPorNoEnteder
+
+- story: recomendar sitio turistico Gandia
+  steps:
+  - intent: preguntarPorSitioTuristico
+  - action: action_recomendar_turismo

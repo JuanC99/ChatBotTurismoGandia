@@ -13,6 +13,7 @@ from datetime import datetime
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import (EventType)
+import random
 
 class ActionHelloWorld(Action):
 
@@ -29,4 +30,23 @@ class ActionHelloWorld(Action):
         print('day Name:', dt.strftime('%A'))
         dispatcher.utter_message(text="Hello World!, today is: {}".format(dt.strftime('%A')))
 
+        return []
+
+class ActionRecomendarTurismo(Action):
+
+    def name(self) -> Text:
+        return "action_recomendar_turismo"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        listaSitiosTuristicosGandia = [
+                ("utter_responderExplicacionCastilloBayren","utter_turismo/preguntarPorReservaCastilloBairen"),
+                ("utter_responderExplicacionCuevaParapello","utter_turismo/preguntarPorReservaCuevaParpallo"),
+                ("utter_responderExplicacionRefugioAntiaeresos","utter_turismo/preguntarPorVisitaRefugiosAntiaereos")
+                ]
+        nRandom = random.randint(0, len(listaSitiosTuristicosGandia) - 1)
+        #dispatcher.utter_message(response="utter_responderRecomendacion") #Aqui tienes mi recomendacion de hoy!
+        for elemento in listaSitiosTuristicosGandia[nRandom]:
+            dispatcher.utter_message(response=elemento)
         return []

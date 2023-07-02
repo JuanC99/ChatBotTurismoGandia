@@ -1,9 +1,9 @@
 version: "3.1"
 responses:
   utter_turismo/preguntarPorReservaCuevaParpallo:
-    - text: "Si se desea visitar la Cueva del Parpalló, se podrán reservar y/o adquirir las entradas en la web de turismo, en el apartado <a target='_blank' href='https://visitgandia.com/gnd/Web_php/index.php?contenido=subapartados_coconut&id_boto=4586#services'>Reservas on-line</a>"
+    - text: "Para reservar y/o adquirir las entradas para vistar la CuevaParpallo, lo puedes hacer desde la web de turismo, en el apartado <a target='_blank' href='https://visitgandia.com/gnd/Web_php/index.php?contenido=subapartados_coconut&id_boto=4586#services'>Reservas on-line</a>"
   utter_turismo/preguntarPorReservaCastilloBairen:
-    - text: "En cuanto al Castillo de Bairén, para reservar y/o adquirir las entradas se podrá llamar al Tlf: <a  href='tel:+34962959540'>962 959 540</a> o mandar un mail a la dirección de correo  <a href='mailto:arquologia@gandia.org'>arquologia@gandia.org</a> Sin embargo, temporalmente no se realizan visitas debido a la realización de obras de acondicionamiento del espacio."
+    - text: "Para reservar y/o adquirir las entradas para visititar el Castillo de Bayren, se podrá llamar al Tlf: <a  href='tel:+34962959540'>962 959 540</a> o mandar un mail a la dirección de correo  <a href='mailto:arquologia@gandia.org'>arquologia@gandia.org</a>"
   utter_turismo/preguntarPorActividadesNauticas:
     - text: " En gandia puedes encontrar las siguientes actividades acuáticas:<br>
               - Remo<br>
@@ -14,7 +14,7 @@ responses:
               - Hidropedales <br>
               - Arrastre de Banana"
   utter_turismo/preguntarPorVisitaRefugiosAntiaereos:
-    - text: " Los Refugios de la Guerra Civil de la Pescadería y del Prado. Se pueden visitar todos los sábados a las 11h, siendo el punto de encuentro para ello el Mirador dels Borja (detrás del Ayuntamiento). <br>
+    - text: "Se pueden visitar todos los sábados a las 11h, siendo el punto de encuentro para ello el Mirador dels Borja (detrás del Ayuntamiento). <br>
               El precio es de 5€ por persona, excepto para los menores de 12 años, cuyo precio es de 2€.<br>
               Será necesario un número mínimo de 10 personas por grupo para poder realizarse la visita<br>
               Inscripción llamando al Tlf: <a  href='tel:+34667 69 74 48'>667 69 74 48</a>"
@@ -22,10 +22,13 @@ responses:
   utter_responderRuta:
     - text: ¿Que tipo de ruta (Sendrismo o ciclismo)?
 
-
   utter_responderRutaCiclismo:
     - text: "¡Aquí puedes encontrar rutas de ciclismo! <br>
               <a target='_blank' href='https://www.komoot.com/es-es/guide/1632703/rutas-en-bici-en-real-de-gandia'>www.komoot.com/rutas-gandia</a>"
+  
+  utter_responderRecomendacion:
+    - text: "¡Aqui tienes mi recomendacion de hoy!"
+    - text: "¡Aqui te dejo un recomendacion!"
 
   utter_responderRutaSenderismo:
     - text: "¡Aquí puedes encontrar rutas de Senderismo! <br>
@@ -33,3 +36,16 @@ responses:
             -<a target='_blank' href='https://visitgandia.com/gnd/Web_php/index.php?contenido=showRuta&id=43&id_pare=3&idNivel=4516&title=ruta-dels-borja-xtiva-gandia'>Ruta dels Borja, Xàtiva-Gandia/a> <br>
             -<a target='_blank' href='https://visitgandia.com/gnd/Web_php/index.php?contenido=showRuta&id=6&id_pare=3&idNivel=4516&title=sl-cv80-senda-del-portalet'>SL-CV80 Senda del Portale</a><br>
             Aunque puedes encontrar muchas mas rutas en la siguiente web: <a target='_blank' href='https://visitgandia.com/routes/3/4516/senderismo.html'>www.visitgandia.com/rutas-gandia</a>"
+
+  utter_responderExplicacionCastilloBayren:
+    - text: "El Castillo de Bayren (Castell de Bairén) es una preciosa fortificación que vigila imponente toda la bahía de Gandia.
+            Se trata de uno de esos lugares que demuestran que Gandia es mucho más que sol y playa. Si te gusta el senderismo, la historia, la cultura, 
+            la montaña o simplemente pasear, no te puedes perder esta ruta que te llevará hasta uno de los castillos con más encanto de Valencia."
+
+  utter_responderExplicacionRefugioAntiaeresos:
+    - text: "Los Refugios Antiaéreos de Gandia, situados en la Pescadería y la Plaza del Prado, son monumentos históricos que marcarón un 
+    período crítico en la historia de España. Estos refugios fueron construidos en 1938 y 1939 con el objetivo de proteger a la población civil de los bombardeos aéreos que se estaban produciendo en este período."
+
+  utter_responderExplicacionCuevaParapello:
+   - text: "La Cova del Parpalló es un destacado sitio arqueológico del Paleolítico Superior conocido por albergar más de 6.000 plaquetas de arte rupestre.
+    Catalogada como bien de Interés Cultural y Patrimonio Mundial de la UNESCO, esta cueva ofrece una visión única de la vida de nuestros antepasados."

@@ -4,14 +4,14 @@ responses:
   utter_responderAlquiler:
     - text: ¿Que tipo de vehiculo desaeas alquilar?
       buttons:
-        - payload: bici
+        - payload: Una bicicleta
           title: Bicicleta 🚲
         - payload: coche
           title: Coche 🚗
-        - payload: moto
+        - payload: Una moto
           title: Moto/Motocicleta 🛵
-        - payload: moto acuatica
-          title: Moto actúatica 🚤
+        - payload: Una moto acuática
+          title: Moto acuática 🚤
   
   utter_responderAlquilerCoche:
     - text: "En Gandia exisiten una gran numero de empresas de alquiler de coches. Algunas con buenas valoraciones en Google son las siguientes:
